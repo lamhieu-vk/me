@@ -1,0 +1,14 @@
+[ignore]
+
+[include]
+
+[libs]
+types/
+
+[lints]
+
+[options]
+module.file_ext=.js
+module.name_mapper='components' -> '<PROJECT_ROOT>/src/components'
+
+[strict]

@@ -1,0 +1,12 @@
+{
+  "extends": "react-static/.babelrc",
+  "presets": ["flow"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"]
+      }
+    ]
+  ]
+}
