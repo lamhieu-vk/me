@@ -35,7 +35,7 @@ export const ProgressLine = ({ name, value, className, ...props }: any) => (
       <div className="flex-auto tl dark-gray pa1">{name}</div>
       <div className="flex-auto tr gray pa1">{value}%</div>
     </div>
-    <div className="mt1s-ns mt1 relative min-vw-25 max-w-100 h1 bg-light-gray br3 t-all-ease">
+    <div className="mt1s-ns mt1 relative min-vw-25-ns min-vw-50 max-w-100 h1 bg-light-gray br3 t-all-ease">
       <div
         className="ma1 loaded absolute absolute--fill bg-gray br3 t-all-ease"
         style={{ width: `${value}%` }}
