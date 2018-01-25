@@ -1728,4 +1728,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.614b8be6.js.map
+//# sourceMappingURL=app.static.c11f21d0.js.map
