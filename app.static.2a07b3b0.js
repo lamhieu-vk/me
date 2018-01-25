@@ -589,9 +589,6 @@ function Background(_ref) {
   );
 }
 
-/**
- * add sizeMe when ssr
- */
 exports.default = (0, _reactSizeme2.default)({
   refreshMode: 'debounce',
   refreshRate: 16,
@@ -599,8 +596,6 @@ exports.default = (0, _reactSizeme2.default)({
   monitorWidth: true,
   enableSSRBehaviour: true
 })(Background);
-
-// export default Background
 
 /***/ }),
 /* 12 */
@@ -1806,4 +1801,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.ca69454c.js.map
+//# sourceMappingURL=app.static.2a07b3b0.js.map
