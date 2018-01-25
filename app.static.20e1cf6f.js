@@ -211,7 +211,7 @@ var _reactStaticRoutes = __webpack_require__(8);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
-__webpack_require__(31);
+__webpack_require__(37);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1299,6 +1299,8 @@ var Meta = function Meta(_ref) {
       description = _ref.description,
       favicon = _ref.favicon,
       links = _ref.links;
+
+  var img = '' + (website || '') + image[Math.floor(Math.random() * image.length)];
   return _react2.default.createElement(
     _reactHelmet2.default,
     null,
@@ -1309,15 +1311,15 @@ var Meta = function Meta(_ref) {
     _react2.default.createElement('meta', { name: 'author', content: 'Lam Hieu' }),
     _react2.default.createElement('meta', { name: 'designer', content: 'Lam Hieu' }),
     _react2.default.createElement('meta', { key: 'keywords', property: 'keywords', content: keywords }),
-    _react2.default.createElement('meta', { key: 'image', itemProp: 'image', content: '' + (website || '') + image }),
+    _react2.default.createElement('meta', { key: 'image', itemProp: 'image', content: img }),
     _react2.default.createElement('meta', { key: 'description', itemProp: 'description', content: description }),
     _react2.default.createElement('meta', { key: 'name', itemProp: 'name', content: title }),
-    _react2.default.createElement('meta', { key: 'twitter:image', name: 'twitter:image', content: '' + (website || '') + image }),
+    _react2.default.createElement('meta', { key: 'twitter:image', name: 'twitter:image', content: img }),
     _react2.default.createElement('meta', { key: 'twitter:description', name: 'twitter:description', content: description }),
     _react2.default.createElement('meta', { key: 'twitter:title', name: 'twitter:title', content: title }),
     _react2.default.createElement('meta', { key: 'twitter:card', name: 'twitter:card', content: 'summary' }),
     _react2.default.createElement('meta', { key: 'og:description', property: 'og:description', content: description }),
-    _react2.default.createElement('meta', { key: 'og:image', property: 'og:image', content: '' + (website || '') + image }),
+    _react2.default.createElement('meta', { key: 'og:image', property: 'og:image', content: img }),
     _react2.default.createElement('meta', { key: 'og:title', property: 'og:title', content: title }),
     _react2.default.createElement('meta', { key: 'og:type', property: 'og:type', content: 'website' }),
     _react2.default.createElement('meta', { key: 'googlebot', name: 'googlebot', content: 'all,index,follow' }),
@@ -1358,11 +1360,35 @@ var _cover = __webpack_require__(28);
 
 var _cover2 = _interopRequireDefault(_cover);
 
-var _favicon32x = __webpack_require__(29);
+var _cover3 = __webpack_require__(29);
+
+var _cover4 = _interopRequireDefault(_cover3);
+
+var _cover5 = __webpack_require__(30);
+
+var _cover6 = _interopRequireDefault(_cover5);
+
+var _cover7 = __webpack_require__(31);
+
+var _cover8 = _interopRequireDefault(_cover7);
+
+var _cover9 = __webpack_require__(32);
+
+var _cover10 = _interopRequireDefault(_cover9);
+
+var _cover11 = __webpack_require__(33);
+
+var _cover12 = _interopRequireDefault(_cover11);
+
+var _cover13 = __webpack_require__(34);
+
+var _cover14 = _interopRequireDefault(_cover13);
+
+var _favicon32x = __webpack_require__(35);
 
 var _favicon32x2 = _interopRequireDefault(_favicon32x);
 
-var _favicon16x = __webpack_require__(30);
+var _favicon16x = __webpack_require__(36);
 
 var _favicon16x2 = _interopRequireDefault(_favicon16x);
 
@@ -1372,7 +1398,7 @@ var meta = exports.meta = {
   website: 'https://lamhieu.info',
   title: 'lamhieu - yep, never give up.',
   keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
-  image: _cover2.default,
+  image: [_cover2.default, _cover4.default, _cover6.default, _cover8.default, _cover10.default, _cover12.default, _cover14.default],
   description: 'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất',
   favicon: {
     '16x16': _favicon16x2.default,
@@ -1711,22 +1737,58 @@ var sections = exports.sections = {
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/cover.23dcbf12.jpg";
+module.exports = __webpack_require__.p + "static/cover-01.23dcbf12.jpg";
 
 /***/ }),
 /* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/cover-02.69da74aa.jpg";
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/cover-03.2de70360.jpg";
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/cover-04.2b4c4b5b.jpg";
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/cover-05.b4b4039f.jpg";
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/cover-06.70b918ad.jpg";
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfAAAAHwCAIAAADWzqqxAAAHg0lEQVR4nO3WwYnbUBSG0Sh44SbcjFpSAUKrrARZuxhXkmKyH7IIw8C1vjmngh/e4+Mu9+fjBwDX93N6AABfQ9ABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEill9/fk9v+Oh4ndMT/mFft+kJ1/Cez/eG/Kj/9J4/6j2fz4UOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOELHcn4/pDXzSvm7TE6g5Xuf0BD7PhQ4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARt+kB1Byvc3rCNezrNj2BGhc6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QMRtegA1+7pNT4BvyoUOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOELHcn4/pDR/t6zY9gc87Xuf0hGvwzy/tPf+5Cx0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEibtMDqNnXbXoCfFMudIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdICI2/QAao7XOT3hGvZ1m55AjQsdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIpb78zG9gZR93aYnXMPxOqcnUONCB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4hY7s/H9AYAvoALHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSDiL6hHJvmzyopnAAAAAElFTkSuQmCC"
+
+/***/ }),
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB50lEQVRYhdVWS0tCQRg9Pq6p9/Ywu6WU0gOLEiIoEHFTmyDaRLtaBe36P21a1NJdQUEQrYKIgqIi6WUPMtIsM7UUzawW+bjiWE4UY2d15575vu/MHGbmk6lnTO9gCDnL4mUhQDllm8gOnPsLeIyHAQADLQ501lsKAm6f7jB/uExMNtY9Ap2mpuD/ns+FDc82AMAgiBi1DucEiLw+O1DIFdlvoYKHlMsg/poouhqdpoYYw6v4XEG5Mm8Ocwtk9qWh7Ck4vHcjkV6huboReq0OANBW2wxrQwcA4PklitPABTFZl2iBmlMD+Nx2T+gGAOCPBuCN3AIAeE6L9rrWnIBSjqHd1ItBSz/VyhaPVrDrc307j7kFStqAp8QzDvzHRK7HaIWW0/ytgFA8gtWzNSJn0bdQC/h/FqgUHJqqjESOk1OnoxfQIIiY7BunLlQMzC1gLiDvIpqyTRDvcimuw17M7jiJ3E/ime8AcwHUp8AgiJD2EFKQeoFfF8ApuG99psH/syAYC2H9aovIDbQ6UFkh/K2AaDJW9J23m/uoBZSXBXs+V14DSULqLQW7qZfInQTO4X64/DI+lO66MyipJZOiqcpY9DGa3pxDIBakSVdmFpSCl1QS12EvkUu+vVILoLbgt8HcAuYCPgBldIQ/I4Q31gAAAABJRU5ErkJggg=="
 
 /***/ }),
-/* 30 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABhklEQVQ4jaWQS0sCYRiFH2skL5iGXdTGxlVmoUVRq3ZBRBD0+/oB7doEEW6CIIjaSFAYFUQ2aKWTl5wZL+W0qAaiPit6N+8H5+V85zkO10bU4h8jzY/OcK+XyFVUJofH8To9AFyXc5SMRwCGvYMoARmAeksnW7wkFogy5A0ircaXOFYz5Coqi8oCYd8IANvZtG2gBGRW40sA3FbzZIuXJEMJZiNJHLHNOctoG9SadYKeAeT+COuTK1QaNcy2CYDH6cHv8rF1tkOhdo9mlvH3+XA73Uh39QebRzPKuCUXAJ1Oh+fOy9vbetsl/RHNLANQbT5RbT4hico5uDkiUzgFYH50xkb4UqLIYDo8heyPADDkDYrOxAZKQLab7zYO10bU+i7idjbdFeFDFyaIDYwh9Uh2mj8jpEIJUqHEjwhCg/3rQ86LVwBMjcRZVBbEBvWWzm01/0kw2w2knl4AjLb5RddbBvBe4nfOaxPLzEaSAByrGXYv9v6GcFI4Q33/tahrojNxgt/OKwkCl/We8YkmAAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 31 */
+/* 37 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -1734,4 +1796,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.c3b29227.js.map
+//# sourceMappingURL=app.static.20e1cf6f.js.map
