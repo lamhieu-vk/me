@@ -537,12 +537,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
+var defaultSize = {
+  height: 200,
+  width: 200
+};
+
 function Background(_ref) {
   var _ref$autoSize = _ref.autoSize,
       autoSize = _ref$autoSize === undefined ? true : _ref$autoSize,
       image = _ref.image,
       overlayColor = _ref.overlayColor,
-      size = _ref.size,
+      _ref$size = _ref.size,
+      size = _ref$size === undefined ? defaultSize : _ref$size,
       children = _ref.children,
       props = _objectWithoutProperties(_ref, ['autoSize', 'image', 'overlayColor', 'size', 'children']);
 
@@ -583,6 +589,9 @@ function Background(_ref) {
   );
 }
 
+/**
+ * add sizeMe when ssr
+ */
 exports.default = (0, _reactSizeme2.default)({
   refreshMode: 'debounce',
   refreshRate: 16,
@@ -591,6 +600,8 @@ exports.default = (0, _reactSizeme2.default)({
   enableSSRBehaviour: false,
   noPlaceholders: false
 })(Background);
+
+// export default Background
 
 /***/ }),
 /* 12 */
@@ -1796,4 +1807,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.20e1cf6f.js.map
+//# sourceMappingURL=app.static.abfd412f.js.map
