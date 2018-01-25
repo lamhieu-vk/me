@@ -1337,6 +1337,15 @@ var Meta = function Meta(_ref) {
       'title',
       null,
       title
+    ),
+    _react2.default.createElement('script', {
+      async: true,
+      src: 'https://www.googletagmanager.com/gtag/js?id=UA-108475565-1'
+    }),
+    _react2.default.createElement(
+      'script',
+      null,
+      '\n      window.dataLayer = window.dataLayer || [];\n      function gtag(){dataLayer.push(arguments);}\n      gtag(\'js\', new Date());\n      gtag(\'config\', \'UA-108475565-1\');\n    '
     )
   );
 };
@@ -1740,4 +1749,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.91e615de.js.map
+//# sourceMappingURL=app.static.3ca240c0.js.map
