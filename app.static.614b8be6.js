@@ -1065,7 +1065,7 @@ var Message = function (_PureComponent) {
             return true;
           },
           'data-component': 'Message',
-          className: (0, _classnames2.default)('message', messageTheme[by].line, by === 'author' ? 'a-slide-to-right' : 'a-slide-to-left')
+          className: (0, _classnames2.default)('message a-s', messageTheme[by].line, by === 'author' ? 'a-slide-to-right' : 'a-slide-to-left')
         },
         _react2.default.createElement('div', { className: messageTheme[by].avatar }),
         _react2.default.createElement(
@@ -1728,4 +1728,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.a295f8cd.js.map
+//# sourceMappingURL=app.static.614b8be6.js.map
