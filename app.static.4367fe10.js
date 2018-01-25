@@ -211,7 +211,7 @@ var _reactStaticRoutes = __webpack_require__(8);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
-__webpack_require__(33);
+__webpack_require__(32);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1374,15 +1374,11 @@ var _cover5 = __webpack_require__(29);
 
 var _cover6 = _interopRequireDefault(_cover5);
 
-var _cover7 = __webpack_require__(30);
-
-var _cover8 = _interopRequireDefault(_cover7);
-
-var _favicon32x = __webpack_require__(31);
+var _favicon32x = __webpack_require__(30);
 
 var _favicon32x2 = _interopRequireDefault(_favicon32x);
 
-var _favicon16x = __webpack_require__(32);
+var _favicon16x = __webpack_require__(31);
 
 var _favicon16x2 = _interopRequireDefault(_favicon16x);
 
@@ -1392,7 +1388,7 @@ var meta = exports.meta = {
   website: 'https://lamhieu.info',
   title: 'lamhieu - yep, never give up.',
   keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
-  image: [_cover2.default, _cover4.default, _cover6.default, _cover8.default],
+  image: [_cover2.default, _cover4.default, _cover6.default],
   description: 'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất',
   favicon: {
     '16x16': _favicon16x2.default,
@@ -1739,34 +1735,28 @@ module.exports = __webpack_require__.p + "static/cover-01.23dcbf12.jpg";
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/cover-02.2b4c4b5b.jpg";
+module.exports = __webpack_require__.p + "static/cover-02.b4b4039f.jpg";
 
 /***/ }),
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/cover-03.b4b4039f.jpg";
+module.exports = __webpack_require__.p + "static/cover-03.70b918ad.jpg";
 
 /***/ }),
 /* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/cover-04.70b918ad.jpg";
-
-/***/ }),
-/* 31 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB50lEQVRYhdVWS0tCQRg9Pq6p9/Ywu6WU0gOLEiIoEHFTmyDaRLtaBe36P21a1NJdQUEQrYKIgqIi6WUPMtIsM7UUzawW+bjiWE4UY2d15575vu/MHGbmk6lnTO9gCDnL4mUhQDllm8gOnPsLeIyHAQADLQ501lsKAm6f7jB/uExMNtY9Ap2mpuD/ns+FDc82AMAgiBi1DucEiLw+O1DIFdlvoYKHlMsg/poouhqdpoYYw6v4XEG5Mm8Ocwtk9qWh7Ck4vHcjkV6huboReq0OANBW2wxrQwcA4PklitPABTFZl2iBmlMD+Nx2T+gGAOCPBuCN3AIAeE6L9rrWnIBSjqHd1ItBSz/VyhaPVrDrc307j7kFStqAp8QzDvzHRK7HaIWW0/ytgFA8gtWzNSJn0bdQC/h/FqgUHJqqjESOk1OnoxfQIIiY7BunLlQMzC1gLiDvIpqyTRDvcimuw17M7jiJ3E/ime8AcwHUp8AgiJD2EFKQeoFfF8ApuG99psH/syAYC2H9aovIDbQ6UFkh/K2AaDJW9J23m/uoBZSXBXs+V14DSULqLQW7qZfInQTO4X64/DI+lO66MyipJZOiqcpY9DGa3pxDIBakSVdmFpSCl1QS12EvkUu+vVILoLbgt8HcAuYCPgBldIQ/I4Q31gAAAABJRU5ErkJggg=="
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABhklEQVQ4jaWQS0sCYRiFH2skL5iGXdTGxlVmoUVRq3ZBRBD0+/oB7doEEW6CIIjaSFAYFUQ2aKWTl5wZL+W0qAaiPit6N+8H5+V85zkO10bU4h8jzY/OcK+XyFVUJofH8To9AFyXc5SMRwCGvYMoARmAeksnW7wkFogy5A0ircaXOFYz5Coqi8oCYd8IANvZtG2gBGRW40sA3FbzZIuXJEMJZiNJHLHNOctoG9SadYKeAeT+COuTK1QaNcy2CYDH6cHv8rF1tkOhdo9mlvH3+XA73Uh39QebRzPKuCUXAJ1Oh+fOy9vbetsl/RHNLANQbT5RbT4hico5uDkiUzgFYH50xkb4UqLIYDo8heyPADDkDYrOxAZKQLab7zYO10bU+i7idjbdFeFDFyaIDYwh9Uh2mj8jpEIJUqHEjwhCg/3rQ86LVwBMjcRZVBbEBvWWzm01/0kw2w2knl4AjLb5RddbBvBe4nfOaxPLzEaSAByrGXYv9v6GcFI4Q33/tahrojNxgt/OKwkCl/We8YkmAAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -1774,4 +1764,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.70fc7f4f.js.map
+//# sourceMappingURL=app.static.4367fe10.js.map
