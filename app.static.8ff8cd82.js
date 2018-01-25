@@ -891,9 +891,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var defaultTheme = {
   line: 'pv1 flex flex-wrap items-end',
-  avatar: 'h1s-ns h1 w1s-ns w1 ba bw1 b--white br-100 shadow-l-2 t-all-ease a-f',
+  avatar: 'h1s-ns h1 w1s-ns w1 ba bw1 b--white br-100 shadow-l-2 t-all-ease a-zoom-in-out a-s',
   list: 'flex flex-wrap max-w-60-ns max-w-75',
-  message: 'mv1s-ns mv1 w-auto pa3 bg-white br3 shadow-l-2 f5-ns f6 fw3 gray t-all-ease a-f',
+  message: 'message-content mv1s-ns mv1 w-auto pa3 bg-white br3 f5-ns f6 fw3 gray t-all-ease t-f',
   lineAuthor: 'justify-start mv3-ns mv2 w-100',
   avatarAuthor: 'bg-blue mr2',
   listAuthor: '',
@@ -962,7 +962,7 @@ var Message = function (_PureComponent) {
             { key: idx, className: 'progress w-100' },
             title && _react2.default.createElement(
               'span',
-              { className: 'f3-ns f4 fw4 dark-gray' },
+              { className: 'f3-ns f4 fw4 dark-gray roboto-slab' },
               title
             ),
             items && _react2.default.createElement(
@@ -1228,7 +1228,7 @@ var TimeLine = function TimeLine(_ref3) {
     }),
     title && _react2.default.createElement(
       'div',
-      { className: 'w-100 bl pl2 bw1 b--light-gray' },
+      { className: 'w-100 bl pl2 bw1 b--light-gray roboto-slab' },
       _react2.default.createElement(
         'span',
         { className: 'fw3 f4-ns f5 dark-gray' },
@@ -1728,4 +1728,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.bdc5c199.js.map
+//# sourceMappingURL=app.static.8ff8cd82.js.map
