@@ -1004,7 +1004,7 @@ var Message = function (_PureComponent) {
         contact: function contact() {
           return _react2.default.createElement(
             'div',
-            { key: idx, className: 'contact w-100' },
+            { key: idx, className: 'contact mt2 w-100' },
             (data || []).map(function (_ref6) {
               var icon = _ref6.icon,
                   href = _ref6.href,
@@ -1728,4 +1728,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.661694b2.js.map
+//# sourceMappingURL=app.static.e1e078fe.js.map
