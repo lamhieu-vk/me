@@ -10,15 +10,32 @@ body {
   line-height: 1.4;
 }
 
+.md * {
+  color: #444;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.md a,
+.md h1,
+.md h2,
+.md h3,
+.md h4,
+.md strong,
+.md b {
+  font-weight: 400;
+}
+
 .md h1,
 .md h2,
 .md h3,
 .md h4 {
-  font-weight: 400;
+  font-family: "Roboto Slab";
 }
 
-.md a {
-  color: #444;
-  font-weight: 400;
-  text-decoration: none;
+.message-content {
+  box-shadow: 0 2px 15px 0 rgba( 0, 0, 0, .075 );
+}
+.message-content:hover {
+  box-shadow: 0 7.5px 15px 0 rgba( 0, 0, 0, .1 );
 }

@@ -45,17 +45,21 @@ export default {
     public: 'public' // The public directory (files copied to dist during build)
   },
   Document: ({ Html, Head, Body, children }) => (
-    <Html lang="en-US">
+    <Html lang="vi-VN">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700"
           rel="stylesheet"
-        />,
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab:300"
+          rel="stylesheet"
+        />
         <link
           href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css"
           rel="stylesheet"
-        />,
+        />
         <link href="https://unpkg.com/ciser/build/ciser.css" rel="stylesheet" />
         <script
           async

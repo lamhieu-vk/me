@@ -13,7 +13,7 @@ export const IconItem = ({ icon, href, label, value, className, ...props }: any)
       />
       <div className="ml2-ns ml1s gray hover-dark-gray fw3 t-all-ease t-vf">
         <div>
-          <span className="f7 ttu">
+          <span className="f7 ttu roboto-slab">
             {label}
           </span>
         </div>
@@ -58,7 +58,7 @@ export const TimeLine = ({
     className={cn('max-w-100', className)}
   >
     {title && (
-      <div className="w-100 bl pl2 bw1 b--light-gray">
+      <div className="w-100 bl pl2 bw1 b--light-gray roboto-slab">
         <span className="fw3 f4-ns f5 dark-gray">{title}</span>
       </div>
     )}

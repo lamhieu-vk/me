@@ -3,9 +3,10 @@ import favicon32x32 from './images/favicon-32x32.png'
 import favicon16x16 from './images/favicon-16x16.png'
 
 export const meta = {
+  website: 'https://lamhieu.info',
   title: 'lamhieu - yep, never give up.',
   keywords:
-    'lamhieu, never give up, nodejs, react, php, mysql, javascript, es6, mongodb, lap trinh vien, lập trình viên',
+    'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: imageCover,
   description:
     'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất',
