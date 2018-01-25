@@ -1676,6 +1676,11 @@ var sections = exports.sections = {
       }, {
         markdown: '### thông tin liên lạc',
         contact: [{
+          icon: 'home',
+          href: '#',
+          label: 'website',
+          value: 'lamhieu.info'
+        }, {
           icon: 'phone',
           href: 'tel:0946083033',
           label: 'phone',
@@ -1764,4 +1769,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.4367fe10.js.map
+//# sourceMappingURL=app.static.4f0a2068.js.map
