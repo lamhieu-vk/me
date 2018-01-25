@@ -211,7 +211,7 @@ var _reactStaticRoutes = __webpack_require__(8);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
-__webpack_require__(37);
+__webpack_require__(36);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -364,11 +364,11 @@ var _Background = __webpack_require__(11);
 
 var _Background2 = _interopRequireDefault(_Background);
 
-var _Section = __webpack_require__(20);
+var _Section = __webpack_require__(19);
 
 var _Section2 = _interopRequireDefault(_Section);
 
-var _Message = __webpack_require__(21);
+var _Message = __webpack_require__(20);
 
 var _Message2 = _interopRequireDefault(_Message);
 
@@ -376,11 +376,11 @@ var _Icon = __webpack_require__(2);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _Meta = __webpack_require__(25);
+var _Meta = __webpack_require__(24);
 
 var _Meta2 = _interopRequireDefault(_Meta);
 
-var _data = __webpack_require__(27);
+var _data = __webpack_require__(26);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -425,7 +425,7 @@ var Home = function (_PureComponent) {
             { className: 'absolute absolute--fill flex flex-column items-center justify-center w-100 h-100 z-3' },
             _react2.default.createElement(
               'div',
-              { className: 'a-wobble mb4-ns mb3 w4-ns w3 ba bw2-ns bw1 b--white overflow-hidden br-100 shadow-l-2' },
+              { className: 'box a-wobble mb4-ns mb3 w4-ns w3 ba bw2-ns bw1 b--white overflow-hidden br-100 t-all-ease' },
               _react2.default.createElement(_Background2.default, {
                 className: 'w-100 aspect-ratio--1x1 bg-center cover br-100',
                 image: '//res.cloudinary.com/lh-imagecloud/image/upload/v1509441836/me.1114e9a3_igwxff.jpg'
@@ -453,7 +453,7 @@ var Home = function (_PureComponent) {
                   'a',
                   {
                     key: k,
-                    className: (0, _classnames2.default)(i % 2 === 0 ? 'a-slide-to-top' : 'a-slide-to-bottom', 'flex items-center justify-center mh2-ns mh1s shadow-l-2 bg-white br-100 h2s-ns h2 w2s-ns w2 f3-ns f4 gray hover-dark-gray t-all-ease no-underline'),
+                    className: (0, _classnames2.default)(i % 2 === 0 ? 'a-slide-to-top' : 'a-slide-to-bottom', 'box flex items-center justify-center mh2-ns mh1s shadow-l-2 bg-white br-100 h2s-ns h2 w2s-ns w2 f3-ns f4 gray hover-dark-gray t-all-ease no-underline'),
                     href: _data.socialMedia[k]
                   },
                   _react2.default.createElement(_Icon2.default, { name: k })
@@ -517,29 +517,27 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactSizeme = __webpack_require__(12);
-
-var _reactSizeme2 = _interopRequireDefault(_reactSizeme);
-
-var _reactProgressiveImage = __webpack_require__(13);
+var _reactProgressiveImage = __webpack_require__(12);
 
 var _reactProgressiveImage2 = _interopRequireDefault(_reactProgressiveImage);
 
-var _getImageSource = __webpack_require__(14);
+var _getImageSource = __webpack_require__(13);
 
 var _getImageSource2 = _interopRequireDefault(_getImageSource);
 
-var _getBackground = __webpack_require__(18);
+var _getBackground = __webpack_require__(17);
 
 var _getBackground2 = _interopRequireDefault(_getBackground);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+// import sizeMe from 'react-sizeme'
+
 
 var defaultSize = {
-  height: 200,
-  width: 200
+  height: 300,
+  width: 300
 };
 
 function Background(_ref) {
@@ -589,28 +587,24 @@ function Background(_ref) {
   );
 }
 
-exports.default = (0, _reactSizeme2.default)({
-  refreshMode: 'debounce',
-  refreshRate: 16,
-  monitorHeight: true,
-  monitorWidth: true,
-  enableSSRBehaviour: true
-})(Background);
+// export default sizeMe({
+//   refreshMode: 'debounce',
+//   refreshRate: 16,
+//   monitorHeight: true,
+//   monitorWidth: true,
+//   enableSSRBehaviour: true,
+// })(Background)
+
+exports.default = Background;
 
 /***/ }),
 /* 12 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-sizeme");
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
 module.exports = require("react-progressive-image");
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -622,7 +616,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _getCloudinaryImage = __webpack_require__(15);
+var _getCloudinaryImage = __webpack_require__(14);
 
 var _getCloudinaryImage2 = _interopRequireDefault(_getCloudinaryImage);
 
@@ -658,7 +652,7 @@ function getImageSource(_ref) {
 exports.default = getImageSource;
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -668,11 +662,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _interpolate = __webpack_require__(16);
+var _interpolate = __webpack_require__(15);
 
 var _interpolate2 = _interopRequireDefault(_interpolate);
 
-var _getImageSize = __webpack_require__(17);
+var _getImageSize = __webpack_require__(16);
 
 var _getImageSize2 = _interopRequireDefault(_getImageSize);
 
@@ -709,13 +703,13 @@ function getCloudinaryImage(_ref) {
 exports.default = getCloudinaryImage;
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("interpolate");
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -757,7 +751,7 @@ function getImageSize(_ref) {
 }
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -767,7 +761,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getGradientColor = __webpack_require__(19);
+var _getGradientColor = __webpack_require__(18);
 
 var _getGradientColor2 = _interopRequireDefault(_getGradientColor);
 
@@ -784,7 +778,7 @@ function getBackground(_ref) {
 exports.default = getBackground;
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -800,7 +794,7 @@ function getGradientColor(color) {
 exports.default = getGradientColor;
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -821,9 +815,9 @@ var _Icon2 = _interopRequireDefault(_Icon);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var defaultTheme = {
-  root: 'pv4-ns pv3-ml pv4 w-100',
+  root: 'section pv4-ns pv3-ml pv4 w-100',
   header: 'flex flex-wrap items-center justify-center w-100',
-  iconWrapper: 'a-shake flex items-center justify-center w3s-ns w3 h3s-ns h3 bg-white br-100 shadow-l-2 t-all-ease',
+  iconWrapper: 'section-icon box a-shake flex items-center justify-center w3s-ns w3 h3s-ns h3 bg-white br-100 t-all-ease',
   icon: 'dib f1-ns f2 gray',
   content: 'pv4-ns pv3 relative flex flex-wrap w-100 center'
 };
@@ -858,7 +852,7 @@ function Section(_ref) {
 exports.default = Section;
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -878,13 +872,13 @@ var _classnames = __webpack_require__(1);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _reactMarkdown = __webpack_require__(22);
+var _reactMarkdown = __webpack_require__(21);
 
 var _reactMarkdown2 = _interopRequireDefault(_reactMarkdown);
 
-var _reactChartjs = __webpack_require__(23);
+var _reactChartjs = __webpack_require__(22);
 
-var _render = __webpack_require__(24);
+var _render = __webpack_require__(23);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -896,9 +890,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var defaultTheme = {
   line: 'pv1 flex flex-wrap items-end',
-  avatar: 'h1s-ns h1 w1s-ns w1 ba bw1 b--white br-100 shadow-l-2 t-all-ease a-zoom-in-out a-s',
+  avatar: 'box h1s-ns h1 w1s-ns w1 ba bw1 b--white br-100 t-all-ease a-zoom-in-out a-s t-all-ease t-f',
   list: 'flex flex-wrap max-w-60-ns max-w-75',
-  message: 'message-content mv1s-ns mv1 w-auto pa3 bg-white br3 f5-ns f6 fw3 gray t-all-ease t-f',
+  message: 'box mv1s-ns mv1 w-auto pa3 bg-white br3 f5-ns f6 fw3 gray t-all-ease t-f',
   lineAuthor: 'justify-start mv3-ns mv2 w-100',
   avatarAuthor: 'bg-blue mr2',
   listAuthor: '',
@@ -1025,6 +1019,13 @@ var Message = function (_PureComponent) {
               });
             })
           );
+        },
+        note: function note() {
+          return _react2.default.createElement(
+            'div',
+            { key: idx, className: 'note w-100' },
+            _react2.default.createElement(_reactMarkdown2.default, { className: 'md f7 ttu fw3', source: data, skipHtml: true })
+          );
         }
       };
       return list[type] && list[type](data) || null;
@@ -1096,19 +1097,19 @@ var Message = function (_PureComponent) {
 exports.default = Message;
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-markdown");
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-chartjs-2");
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1276,7 +1277,7 @@ var TimeLine = function TimeLine(_ref3) {
 exports.TimeLine = TimeLine;
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1290,7 +1291,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHelmet = __webpack_require__(26);
+var _reactHelmet = __webpack_require__(25);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -1344,13 +1345,13 @@ var Meta = function Meta(_ref) {
 exports.default = Meta;
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-helmet");
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1361,39 +1362,39 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.sections = exports.socialMedia = exports.meta = undefined;
 
-var _cover = __webpack_require__(28);
+var _cover = __webpack_require__(27);
 
 var _cover2 = _interopRequireDefault(_cover);
 
-var _cover3 = __webpack_require__(29);
+var _cover3 = __webpack_require__(28);
 
 var _cover4 = _interopRequireDefault(_cover3);
 
-var _cover5 = __webpack_require__(30);
+var _cover5 = __webpack_require__(29);
 
 var _cover6 = _interopRequireDefault(_cover5);
 
-var _cover7 = __webpack_require__(31);
+var _cover7 = __webpack_require__(30);
 
 var _cover8 = _interopRequireDefault(_cover7);
 
-var _cover9 = __webpack_require__(32);
+var _cover9 = __webpack_require__(31);
 
 var _cover10 = _interopRequireDefault(_cover9);
 
-var _cover11 = __webpack_require__(33);
+var _cover11 = __webpack_require__(32);
 
 var _cover12 = _interopRequireDefault(_cover11);
 
-var _cover13 = __webpack_require__(34);
+var _cover13 = __webpack_require__(33);
 
 var _cover14 = _interopRequireDefault(_cover13);
 
-var _favicon32x = __webpack_require__(35);
+var _favicon32x = __webpack_require__(34);
 
 var _favicon32x2 = _interopRequireDefault(_favicon32x);
 
-var _favicon16x = __webpack_require__(36);
+var _favicon16x = __webpack_require__(35);
 
 var _favicon16x2 = _interopRequireDefault(_favicon16x);
 
@@ -1733,67 +1734,69 @@ var sections = exports.sections = {
       by: 'author',
       content: [{
         markdown: 'ohh yeah, cảm ơn vì đã ghé thăm nhà tôi 😆'
+      }, {
+        note: 'styled by [ciser](https://github.com/lamhieu-vk/ciser), design by Lam Hieu'
       }]
     }]
   }
 };
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/cover-01.23dcbf12.jpg";
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/cover-02.69da74aa.jpg";
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/cover-03.2de70360.jpg";
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/cover-04.2b4c4b5b.jpg";
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/cover-05.b4b4039f.jpg";
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/cover-06.70b918ad.jpg";
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfAAAAHwCAIAAADWzqqxAAAHg0lEQVR4nO3WwYnbUBSG0Sh44SbcjFpSAUKrrARZuxhXkmKyH7IIw8C1vjmngh/e4+Mu9+fjBwDX93N6AABfQ9ABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEill9/fk9v+Oh4ndMT/mFft+kJ1/Cez/eG/Kj/9J4/6j2fz4UOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOELHcn4/pDXzSvm7TE6g5Xuf0BD7PhQ4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARt+kB1Byvc3rCNezrNj2BGhc6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QMRtegA1+7pNT4BvyoUOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOECHoABGCDhAh6AARgg4QIegAEYIOELHcn4/pDR/t6zY9gc87Xuf0hGvwzy/tPf+5Cx0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEibtMDqNnXbXoCfFMudIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdICI2/QAao7XOT3hGvZ1m55AjQsdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIpb78zG9gZR93aYnXMPxOqcnUONCB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4hY7s/H9AYAvoALHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSDiL6hHJvmzyopnAAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB50lEQVRYhdVWS0tCQRg9Pq6p9/Ywu6WU0gOLEiIoEHFTmyDaRLtaBe36P21a1NJdQUEQrYKIgqIi6WUPMtIsM7UUzawW+bjiWE4UY2d15575vu/MHGbmk6lnTO9gCDnL4mUhQDllm8gOnPsLeIyHAQADLQ501lsKAm6f7jB/uExMNtY9Ap2mpuD/ns+FDc82AMAgiBi1DucEiLw+O1DIFdlvoYKHlMsg/poouhqdpoYYw6v4XEG5Mm8Ocwtk9qWh7Ck4vHcjkV6huboReq0OANBW2wxrQwcA4PklitPABTFZl2iBmlMD+Nx2T+gGAOCPBuCN3AIAeE6L9rrWnIBSjqHd1ItBSz/VyhaPVrDrc307j7kFStqAp8QzDvzHRK7HaIWW0/ytgFA8gtWzNSJn0bdQC/h/FqgUHJqqjESOk1OnoxfQIIiY7BunLlQMzC1gLiDvIpqyTRDvcimuw17M7jiJ3E/ime8AcwHUp8AgiJD2EFKQeoFfF8ApuG99psH/syAYC2H9aovIDbQ6UFkh/K2AaDJW9J23m/uoBZSXBXs+V14DSULqLQW7qZfInQTO4X64/DI+lO66MyipJZOiqcpY9DGa3pxDIBakSVdmFpSCl1QS12EvkUu+vVILoLbgt8HcAuYCPgBldIQ/I4Q31gAAAABJRU5ErkJggg=="
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABhklEQVQ4jaWQS0sCYRiFH2skL5iGXdTGxlVmoUVRq3ZBRBD0+/oB7doEEW6CIIjaSFAYFUQ2aKWTl5wZL+W0qAaiPit6N+8H5+V85zkO10bU4h8jzY/OcK+XyFVUJofH8To9AFyXc5SMRwCGvYMoARmAeksnW7wkFogy5A0ircaXOFYz5Coqi8oCYd8IANvZtG2gBGRW40sA3FbzZIuXJEMJZiNJHLHNOctoG9SadYKeAeT+COuTK1QaNcy2CYDH6cHv8rF1tkOhdo9mlvH3+XA73Uh39QebRzPKuCUXAJ1Oh+fOy9vbetsl/RHNLANQbT5RbT4hico5uDkiUzgFYH50xkb4UqLIYDo8heyPADDkDYrOxAZKQLab7zYO10bU+i7idjbdFeFDFyaIDYwh9Uh2mj8jpEIJUqHEjwhCg/3rQ86LVwBMjcRZVBbEBvWWzm01/0kw2w2knl4AjLb5RddbBvBe4nfOaxPLzEaSAByrGXYv9v6GcFI4Q33/tahrojNxgt/OKwkCl/We8YkmAAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -1801,4 +1804,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.2a07b3b0.js.map
+//# sourceMappingURL=app.static.e3df4484.js.map
