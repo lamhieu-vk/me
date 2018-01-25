@@ -1368,7 +1368,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var meta = exports.meta = {
   title: 'lamhieu - yep, never give up.',
-  keywords: 'lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
+  keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: _cover2.default,
   description: 'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất',
   favicon: {
@@ -1731,4 +1731,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.3def2790.js.map
+//# sourceMappingURL=app.static.8f344405.js.map
