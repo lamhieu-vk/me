@@ -601,7 +601,7 @@ exports.default = (0, _reactSizeme2.default)({
   refreshRate: 16,
   monitorHeight: true,
   monitorWidth: true,
-  enableSSRBehaviour: true
+  enableSSRBehaviour: false
 })(Background);
 
 /***/ }),
@@ -1214,7 +1214,7 @@ var ProgressLine = function ProgressLine(_ref2) {
     ),
     _react2.default.createElement(
       'div',
-      { className: 'mt1s-ns mt1 relative min-vw-25 max-w-100 h1 bg-light-gray br3 t-all-ease' },
+      { className: 'mt1s-ns mt1 relative min-vw-25-ns min-vw-50 max-w-100 h1 bg-light-gray br3 t-all-ease' },
       _react2.default.createElement('div', {
         className: 'ma1 loaded absolute absolute--fill bg-gray br3 t-all-ease',
         style: { width: value + '%' }
@@ -1740,4 +1740,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.18aea567.js.map
+//# sourceMappingURL=app.static.80b69f1d.js.map
