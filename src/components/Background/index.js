@@ -45,5 +45,5 @@ export default sizeMe({
   refreshRate: 16,
   monitorHeight: true,
   monitorWidth: true,
-  enableSSRBehaviour: true,
+  enableSSRBehaviour: false,
 })(Background)
