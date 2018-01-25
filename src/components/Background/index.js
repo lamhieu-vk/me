@@ -6,7 +6,12 @@ import ProgressiveImage from 'react-progressive-image'
 import getImageSource from '../../helpers/getImageSource'
 import getBackground from '../../helpers/getBackground'
 
-function Background ({ autoSize = true, image, overlayColor, size, children, ...props }: any) {
+const defaultSize = {
+  height: 200,
+  width: 200,
+}
+
+function Background ({ autoSize = true, image, overlayColor, size = defaultSize, children, ...props }: any) {
   const imageSource = !autoSize ? image : getImageSource({ size, src: image })
   if (typeof imageSource === 'string') {
     return (
@@ -45,6 +50,5 @@ export default sizeMe({
   refreshRate: 16,
   monitorHeight: true,
   monitorWidth: true,
-  enableSSRBehaviour: false,
-  noPlaceholders: false,
+  enableSSRBehaviour: true,
 })(Background)
