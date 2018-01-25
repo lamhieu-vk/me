@@ -3,14 +3,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-const Meta = ({ website, title, keywords, image, description, favicon, links }: any) => {
+const Meta = ({ website, lang, title, keywords, image, description, favicon, links }: any) => {
   const img = `${website || ''}${image[Math.floor((Math.random() * image.length))]}`
   return (
     <Helmet>
       {links}
       <meta key="charset" charSet="utf-8" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="language" content="vietnamese" />
+      <meta name="language" content={lang} />
       <meta name="author" content="Lam Hieu" />
       <meta name="designer" content="Lam Hieu" />
       <meta key="keywords" property="keywords" content={keywords} />

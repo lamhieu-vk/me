@@ -9,10 +9,10 @@ import { ProgressLine, TimeLine, IconItem } from './render'
 const defaultTheme = {
   line: 'pv1 flex flex-wrap items-end',
   avatar:
-    'h1s-ns h1 w1s-ns w1 ba bw1 b--white br-100 shadow-l-2 t-all-ease a-zoom-in-out a-s',
+    'box h1s-ns h1 w1s-ns w1 ba bw1 b--white br-100 t-all-ease a-zoom-in-out a-s t-all-ease t-f',
   list: 'flex flex-wrap max-w-60-ns max-w-75',
   message:
-    'message-content mv1s-ns mv1 w-auto pa3 bg-white br3 f5-ns f6 fw3 gray t-all-ease t-f',
+    'box mv1s-ns mv1 w-auto pa3 bg-white br3 f5-ns f6 fw3 gray t-all-ease t-f',
   lineAuthor: 'justify-start mv3-ns mv2 w-100',
   avatarAuthor: 'bg-blue mr2',
   listAuthor: '',
@@ -103,6 +103,11 @@ class Message extends PureComponent<any, any> {
           ))}
         </div>
       ),
+      note: () => (
+        <div key={idx} className="note w-100">
+          <Markdown className="md f7 ttu fw3" source={data} skipHtml />
+        </div>
+      )
     }
     return (list[type] && list[type](data)) || null
   }

@@ -33,9 +33,13 @@ body {
   font-family: "Roboto Slab";
 }
 
-.message-content {
+.box {
   box-shadow: 0 2px 15px 0 rgba( 0, 0, 0, .075 );
 }
-.message-content:hover {
+
+.section:hover .section-icon,
+.box:hover {
   box-shadow: 0 7.5px 15px 0 rgba( 0, 0, 0, .1 );
+  transform: scale(1.025);
 }
+

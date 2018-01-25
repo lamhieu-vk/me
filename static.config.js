@@ -30,11 +30,15 @@ export default {
   getRoutes: async () => [
     {
       path: '/',
-      component: 'src/containers/Home'
+      component: 'src/containers/Home/Vi'
+    },
+    {
+      path: '/en',
+      component: 'src/containers/Home/En'
     },
     {
       is404: true,
-      component: 'src/containers/Home'
+      component: 'src/containers/Home/Vi'
     }
   ],
   siteRoot: 'https://lamhieu.info',
@@ -69,21 +73,6 @@ export default {
       </Head>
       <Body>
         {children}
-        {/* <noscript id="deferred-styles">
-          <link
-            href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700"
-            rel="stylesheet"
-          />,
-          <link
-            href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css"
-            rel="stylesheet"
-          />,
-          <link
-            href="https://unpkg.com/ciser/build/ciser.css"
-            rel="stylesheet"
-          />
-        </noscript>
-        <script dangerouslySetInnerHTML={{ __html: deferredStylesScript }} /> */}
       </Body>
     </Html>
   )

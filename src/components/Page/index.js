@@ -2,16 +2,15 @@
 
 import React, { PureComponent } from 'react'
 import cn from 'classnames'
-// import 'ciser/build/ciser.min.css'
-import Background from '../components/Background'
-import Section from '../components/Section'
-import Message from '../components/Message'
-import Icon from '../components/Icon'
-import Meta from '../components/Meta'
-import { meta, sections, socialMedia } from '../data'
+import Background from '../Background'
+import Section from '../Section'
+import Message from '../Message'
+import Icon from '../Icon'
+import Meta from '../Meta'
 
 class Home extends PureComponent<any, any> {
   render () {
+    const { data: { meta, sections, socialMedia } = {} } = this.props
     const list = Object.keys(sections)
     return [
       <Meta key="meta" {...meta} links={[]} />,
@@ -27,7 +26,7 @@ class Home extends PureComponent<any, any> {
           overlayColor={['rgba(246, 249, 252, .75)', 'rgba(246, 249, 252, 1)']}
         >
           <div className="absolute absolute--fill flex flex-column items-center justify-center w-100 h-100 z-3">
-            <div className="a-wobble mb4-ns mb3 w4-ns w3 ba bw2-ns bw1 b--white overflow-hidden br-100 shadow-l-2">
+            <div className="box a-wobble mb4-ns mb3 w4-ns w3 ba bw2-ns bw1 b--white overflow-hidden br-100 t-all-ease">
               <Background
                 className="w-100 aspect-ratio--1x1 bg-center cover br-100"
                 image="//res.cloudinary.com/lh-imagecloud/image/upload/v1509441836/me.1114e9a3_igwxff.jpg"
@@ -47,7 +46,7 @@ class Home extends PureComponent<any, any> {
                   key={k}
                   className={cn(
                     i % 2 === 0 ? 'a-slide-to-top' : 'a-slide-to-bottom',
-                    'flex items-center justify-center mh2-ns mh1s shadow-l-2 bg-white br-100 h2s-ns h2 w2s-ns w2 f3-ns f4 gray hover-dark-gray t-all-ease no-underline'
+                    'box flex items-center justify-center mh2-ns mh1s shadow-l-2 bg-white br-100 h2s-ns h2 w2s-ns w2 f3-ns f4 gray hover-dark-gray t-all-ease no-underline'
                   )}
                   href={socialMedia[k]}
                 >

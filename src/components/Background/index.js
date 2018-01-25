@@ -1,14 +1,14 @@
 // @flow
 
 import React from 'react'
-import sizeMe from 'react-sizeme'
+// import sizeMe from 'react-sizeme'
 import ProgressiveImage from 'react-progressive-image'
 import getImageSource from '../../helpers/getImageSource'
 import getBackground from '../../helpers/getBackground'
 
 const defaultSize = {
-  height: 200,
-  width: 200,
+  height: 300,
+  width: 300,
 }
 
 function Background ({ autoSize = true, image, overlayColor, size = defaultSize, children, ...props }: any) {
@@ -45,10 +45,12 @@ function Background ({ autoSize = true, image, overlayColor, size = defaultSize,
   )
 }
 
-export default sizeMe({
-  refreshMode: 'debounce',
-  refreshRate: 16,
-  monitorHeight: true,
-  monitorWidth: true,
-  enableSSRBehaviour: true,
-})(Background)
+// export default sizeMe({
+//   refreshMode: 'debounce',
+//   refreshRate: 16,
+//   monitorHeight: true,
+//   monitorWidth: true,
+//   enableSSRBehaviour: true,
+// })(Background)
+
+export default Background

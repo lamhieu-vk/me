@@ -1,15 +1,12 @@
-import imageCover01 from './images/cover-01.jpg'
-import imageCover02 from './images/cover-02.jpg'
-import imageCover03 from './images/cover-03.jpg'
-import imageCover04 from './images/cover-04.jpg'
-import imageCover05 from './images/cover-05.jpg'
-import imageCover06 from './images/cover-06.jpg'
-import imageCover07 from './images/cover-07.png'
-import favicon32x32 from './images/favicon-32x32.png'
-import favicon16x16 from './images/favicon-16x16.png'
+import imageCover01 from '../images/cover-01.jpg'
+import imageCover02 from '../images/cover-02.jpg'
+import imageCover03 from '../images/cover-03.jpg'
+import favicon32x32 from '../images/favicon-32x32.png'
+import favicon16x16 from '../images/favicon-16x16.png'
 
 export const meta = {
   website: 'https://lamhieu.info',
+  lang: 'english',
   title: 'lamhieu - yep, never give up.',
   keywords:
     'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
@@ -17,10 +14,6 @@ export const meta = {
     imageCover01,
     imageCover02,
     imageCover03,
-    imageCover04,
-    imageCover05,
-    imageCover06,
-    imageCover07
   ],
   description:
     'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất',
@@ -437,6 +430,12 @@ export const sections = {
             markdown: '### thông tin liên lạc',
             contact: [
               {
+                icon: 'home',
+                href: '#',
+                label: 'website',
+                value: 'lamhieu.info'
+              },
+              {
                 icon: 'phone',
                 href: 'tel:0946083033',
                 label: 'phone',
@@ -492,6 +491,9 @@ export const sections = {
         content: [
           {
             markdown: 'ohh yeah, cảm ơn vì đã ghé thăm nhà tôi 😆'
+          },
+          {
+            note: 'styled by [ciser](https://github.com/lamhieu-vk/ciser), design by Lam Hieu'
           }
         ]
       }
