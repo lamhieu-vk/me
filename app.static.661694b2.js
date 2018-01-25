@@ -1158,7 +1158,7 @@ var IconItem = function IconItem(_ref) {
           null,
           _react2.default.createElement(
             'span',
-            { className: 'f7 ttu' },
+            { className: 'f7 ttu roboto-slab' },
             label
           )
         ),
@@ -1728,4 +1728,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.8ff8cd82.js.map
+//# sourceMappingURL=app.static.661694b2.js.map
