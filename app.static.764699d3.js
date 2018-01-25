@@ -405,20 +405,7 @@ var Home = function (_PureComponent) {
     key: 'render',
     value: function render() {
       var list = Object.keys(_data.sections);
-      return [_react2.default.createElement(_Meta2.default, _extends({
-        key: 'meta'
-      }, _data.meta, {
-        links: [_react2.default.createElement('link', {
-          href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700',
-          rel: 'stylesheet'
-        }), _react2.default.createElement('link', {
-          href: 'https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css',
-          rel: 'stylesheet'
-        }), _react2.default.createElement('link', {
-          href: 'https://unpkg.com/ciser/build/ciser.css',
-          rel: 'stylesheet'
-        })]
-      })), _react2.default.createElement(
+      return [_react2.default.createElement(_Meta2.default, _extends({ key: 'meta' }, _data.meta, { links: [] })), _react2.default.createElement(
         'div',
         {
           key: 'content',
@@ -1740,4 +1727,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.80b69f1d.js.map
+//# sourceMappingURL=app.static.764699d3.js.map
