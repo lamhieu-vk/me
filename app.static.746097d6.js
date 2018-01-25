@@ -583,14 +583,16 @@ function Background(_ref) {
   );
 }
 
-exports.default = (0, _reactSizeme2.default)({
-  refreshMode: 'debounce',
-  refreshRate: 16,
-  monitorHeight: true,
-  monitorWidth: true,
-  enableSSRBehaviour: false,
-  noPlaceholders: false
-})(Background);
+// export default sizeMe({
+//   refreshMode: 'debounce',
+//   refreshRate: 16,
+//   monitorHeight: true,
+//   monitorWidth: true,
+//   enableSSRBehaviour: false,
+//   noPlaceholders: false,
+// })(Background)
+
+exports.default = (0, _reactSizeme2.default)()(Background);
 
 /***/ }),
 /* 12 */
@@ -1728,4 +1730,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.a295f8cd.js.map
+//# sourceMappingURL=app.static.746097d6.js.map
