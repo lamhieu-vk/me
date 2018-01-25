@@ -493,7 +493,18 @@ export const sections = {
             markdown: 'ohh yeah, cảm ơn vì đã ghé thăm nhà tôi 😆'
           },
           {
-            note: 'styled by [ciser](https://github.com/lamhieu-vk/ciser), design by Lam Hieu'
+            note: 'giao diện bởi [ciser](https://github.com/lamhieu-vk/ciser), thiết kế bởi Lâm Hiếu',
+          },
+          {
+            switchLanguge: {
+              text: 'xem ở ngôn ngữ khác',
+              items: [
+                {
+                  href: '/en',
+                  label: 'tiếng anh',
+                }
+              ]
+            }
           }
         ]
       }

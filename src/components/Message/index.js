@@ -1,6 +1,7 @@
 // @flow
 
 import React, { PureComponent } from 'react'
+import { Link } from 'react-static'
 import cn from 'classnames'
 import Markdown from 'react-markdown'
 import { Radar, Pie } from 'react-chartjs-2'
@@ -20,7 +21,7 @@ const defaultTheme = {
   lineGuest: 'justify-end mv3-ns mv2 w-100',
   avatarGuest: 'bg-green ml2 order-1',
   listGuest: '',
-  messageGuest: '',
+  messageGuest: ''
 }
 
 class Message extends PureComponent<any, any> {
@@ -48,8 +49,8 @@ class Message extends PureComponent<any, any> {
               fullWidth: true,
               reverse: false,
               labels: {
-                fontColor: '#555',
-              },
+                fontColor: '#555'
+              }
             }}
             redraw
           />
@@ -59,7 +60,11 @@ class Message extends PureComponent<any, any> {
         const { title, items } = data || {}
         return (
           <div key={idx} className="progress w-100">
-            {title && <span className="f3-ns f4 fw4 dark-gray roboto-slab">{title}</span>}
+            {title && (
+              <span className="f3-ns f4 fw4 dark-gray roboto-slab">
+                {title}
+              </span>
+            )}
             {items && (
               <div className="mt2s-ns mt2">
                 {(items || []).map(({ name, value }) => (
@@ -107,6 +112,20 @@ class Message extends PureComponent<any, any> {
         <div key={idx} className="note w-100">
           <Markdown className="md f7 ttu fw3" source={data} skipHtml />
         </div>
+      ),
+      switchLanguge: () => (
+        <div key={idx} className="switchLanguge flex flex-wrap w-100">
+          <Markdown
+            className="md mr1 f7 ttu fw3"
+            source={data && data.text}
+            skipHtml
+          />
+          {((data && data.items) || []).map(({ href, label }) => (
+            <Link className="f7 ttu fw4 gray hover-dark-gray t-all-ease no-underline" key={href} to={href}>
+              {label}
+            </Link>
+          ))}
+        </div>
       )
     }
     return (list[type] && list[type](data)) || null
@@ -118,14 +137,14 @@ class Message extends PureComponent<any, any> {
         list: cn(theme.list, theme.listAuthor),
         line: cn(theme.line, theme.lineAuthor),
         avatar: cn(theme.avatar, theme.avatarAuthor),
-        message: cn(theme.message, theme.messageAuthor),
+        message: cn(theme.message, theme.messageAuthor)
       },
       guest: {
         list: cn(theme.list, theme.listGuest),
         line: cn(theme.line, theme.lineGuest),
         avatar: cn(theme.avatar, theme.avatarGuest),
-        message: cn(theme.message, theme.messageGuest),
-      },
+        message: cn(theme.message, theme.messageGuest)
+      }
     }
     return (
       <div
@@ -137,7 +156,7 @@ class Message extends PureComponent<any, any> {
         className={cn(
           'message a-s',
           messageTheme[by].line,
-          by === 'author' ? 'a-slide-to-right' : 'a-slide-to-left',
+          by === 'author' ? 'a-slide-to-right' : 'a-slide-to-left'
         )}
       >
         <div className={messageTheme[by].avatar} />
@@ -145,7 +164,7 @@ class Message extends PureComponent<any, any> {
           {(content || []).map((msg, i) => (
             <div key={i} className={messageTheme[by].message}>
               {Object.keys(msg).map((t, y) =>
-                this.renderMsg({ type: t, data: msg[t] }, y),
+                this.renderMsg({ type: t, data: msg[t] }, y)
               )}
             </div>
           ))}
