@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -133,17 +133,212 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(4);
+var _classnames = __webpack_require__(1);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _Background = __webpack_require__(17);
+
+var _Background2 = _interopRequireDefault(_Background);
+
+var _Section = __webpack_require__(25);
+
+var _Section2 = _interopRequireDefault(_Section);
+
+var _Message = __webpack_require__(26);
+
+var _Message2 = _interopRequireDefault(_Message);
+
+var _Icon = __webpack_require__(2);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+var _Meta = __webpack_require__(30);
+
+var _Meta2 = _interopRequireDefault(_Meta);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Home = function (_PureComponent) {
+  _inherits(Home, _PureComponent);
+
+  function Home() {
+    _classCallCheck(this, Home);
+
+    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+  }
+
+  _createClass(Home, [{
+    key: 'render',
+    value: function render() {
+      var _props$data = this.props.data;
+      _props$data = _props$data === undefined ? {} : _props$data;
+      var meta = _props$data.meta,
+          sections = _props$data.sections,
+          socialMedia = _props$data.socialMedia;
+
+      var list = Object.keys(sections);
+      return [_react2.default.createElement(_Meta2.default, _extends({ key: 'meta' }, meta, { links: [] })), _react2.default.createElement(
+        'div',
+        {
+          key: 'content',
+          'data-component': 'Home',
+          className: 'relative',
+          style: { backgroundColor: '#f6f9fc' }
+        },
+        _react2.default.createElement(
+          _Background2.default,
+          {
+            className: 'relative aspect-ratio--16x9-ns aspect-ratio--4x3 bg-center cover',
+            image: '//res.cloudinary.com/lh-imagecloud/image/upload/v1515930477/Mesh-Triangles-Surface-Colorful-Angular-WallpapersByte-com-3840x2400_kfsxmi.jpg',
+            overlayColor: ['rgba(246, 249, 252, .75)', 'rgba(246, 249, 252, 1)']
+          },
+          _react2.default.createElement(
+            'div',
+            { className: 'absolute absolute--fill flex flex-column items-center justify-center w-100 h-100 z-3' },
+            _react2.default.createElement(
+              'div',
+              { className: 'box a-wobble mb4-ns mb3 w4-ns w3 ba bw2-ns bw1 b--white overflow-hidden br-100 t-all-ease' },
+              _react2.default.createElement(_Background2.default, {
+                className: 'w-100 aspect-ratio--1x1 bg-center cover br-100',
+                image: '//res.cloudinary.com/lh-imagecloud/image/upload/v1509441836/me.1114e9a3_igwxff.jpg'
+              })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'f2-ns f3' },
+              _react2.default.createElement(
+                'span',
+                { className: 'dib fw3 dark-gray a-slide-to-right' },
+                'Lam Hieu'
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'dib fw1 gray a-slide-to-left' },
+                '\'s a developer'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'mt4-ns mt3 flex flex-wrap items-center justify-center' },
+              Object.keys(socialMedia).map(function (k, i) {
+                return _react2.default.createElement(
+                  'a',
+                  {
+                    key: k,
+                    className: (0, _classnames2.default)(i % 2 === 0 ? 'a-slide-to-top' : 'a-slide-to-bottom', 'box flex items-center justify-center mh2-ns mh1s shadow-l-2 bg-white br-100 h2s-ns h2 w2s-ns w2 f3-ns f4 gray hover-dark-gray t-all-ease no-underline'),
+                    href: socialMedia[k]
+                  },
+                  _react2.default.createElement(_Icon2.default, { name: k })
+                );
+              })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'absolute-ns bottom-2 mt3' },
+              _react2.default.createElement(_Icon2.default, {
+                name: 'angle-down',
+                className: 'db-ns dn a-slide-to-bottom a-s a-infinite f4-ns f5 gray'
+              }),
+              _react2.default.createElement(_Icon2.default, { name: 'angle-down', className: 'dn-ns db f4-ns f5 gray' })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'main',
+          { className: 'w-90 mw6 center' },
+          (list || []).map(function (k) {
+            var _sections$k = sections[k],
+                icon = _sections$k.icon,
+                color = _sections$k.color,
+                messages = _sections$k.messages;
+
+            return _react2.default.createElement(
+              _Section2.default,
+              { key: k, icon: icon, color: color },
+              (messages || []).map(function (_ref, i) {
+                var by = _ref.by,
+                    content = _ref.content;
+                return _react2.default.createElement(_Message2.default, { key: i, by: by, content: content });
+              })
+            );
+          })
+        )
+      )];
+    }
+  }]);
+
+  return Home;
+}(_react.PureComponent);
+
+exports.default = Home;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/cover-01.23dcbf12.jpg";
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/cover-02.b4b4039f.jpg";
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/cover-03.70b918ad.jpg";
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB50lEQVRYhdVWS0tCQRg9Pq6p9/Ywu6WU0gOLEiIoEHFTmyDaRLtaBe36P21a1NJdQUEQrYKIgqIi6WUPMtIsM7UUzawW+bjiWE4UY2d15575vu/MHGbmk6lnTO9gCDnL4mUhQDllm8gOnPsLeIyHAQADLQ501lsKAm6f7jB/uExMNtY9Ap2mpuD/ns+FDc82AMAgiBi1DucEiLw+O1DIFdlvoYKHlMsg/poouhqdpoYYw6v4XEG5Mm8Ocwtk9qWh7Ck4vHcjkV6huboReq0OANBW2wxrQwcA4PklitPABTFZl2iBmlMD+Nx2T+gGAOCPBuCN3AIAeE6L9rrWnIBSjqHd1ItBSz/VyhaPVrDrc307j7kFStqAp8QzDvzHRK7HaIWW0/ytgFA8gtWzNSJn0bdQC/h/FqgUHJqqjESOk1OnoxfQIIiY7BunLlQMzC1gLiDvIpqyTRDvcimuw17M7jiJ3E/ime8AcwHUp8AgiJD2EFKQeoFfF8ApuG99psH/syAYC2H9aovIDbQ6UFkh/K2AaDJW9J23m/uoBZSXBXs+V14DSULqLQW7qZfInQTO4X64/DI+lO66MyipJZOiqcpY9DGa3pxDIBakSVdmFpSCl1QS12EvkUu+vVILoLbgt8HcAuYCPgBldIQ/I4Q31gAAAABJRU5ErkJggg=="
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABhklEQVQ4jaWQS0sCYRiFH2skL5iGXdTGxlVmoUVRq3ZBRBD0+/oB7doEEW6CIIjaSFAYFUQ2aKWTl5wZL+W0qAaiPit6N+8H5+V85zkO10bU4h8jzY/OcK+XyFVUJofH8To9AFyXc5SMRwCGvYMoARmAeksnW7wkFogy5A0ircaXOFYz5Coqi8oCYd8IANvZtG2gBGRW40sA3FbzZIuXJEMJZiNJHLHNOctoG9SadYKeAeT+COuTK1QaNcy2CYDH6cHv8rF1tkOhdo9mlvH3+XA73Uh39QebRzPKuCUXAJ1Oh+fOy9vbetsl/RHNLANQbT5RbT4hico5uDkiUzgFYH50xkb4UqLIYDo8heyPADDkDYrOxAZKQLab7zYO10bU+i7idjbdFeFDFyaIDYwh9Uh2mj8jpEIJUqHEjwhCg/3rQ86LVwBMjcRZVBbEBvWWzm01/0kw2w2knl4AjLb5RddbBvBe4nfOaxPLzEaSAByrGXYv9v6GcFI4Q33/tahrojNxgt/OKwkCl/We8YkmAAAAAElFTkSuQmCC"
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(10);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactHotLoader = __webpack_require__(5);
+var _reactHotLoader = __webpack_require__(11);
 
-var _App = __webpack_require__(6);
+var _App = __webpack_require__(12);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -179,19 +374,19 @@ if (typeof document !== 'undefined') {
 }
 
 /***/ }),
-/* 4 */
+/* 10 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 5 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 6 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -205,13 +400,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(7);
+var _reactStatic = __webpack_require__(13);
 
-var _reactStaticRoutes = __webpack_require__(8);
+var _reactStaticRoutes = __webpack_require__(14);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
-__webpack_require__(32);
+__webpack_require__(35);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -224,13 +419,13 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 7 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-static");
 
 /***/ }),
-/* 8 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -246,11 +441,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(15);
 
-var _Home = __webpack_require__(10);
+var _Vi = __webpack_require__(16);
 
-var _Home2 = _interopRequireDefault(_Home);
+var _Vi2 = _interopRequireDefault(_Vi);
+
+var _En = __webpack_require__(33);
+
+var _En2 = _interopRequireDefault(_En);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -265,10 +464,11 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 // Template Map
 var templateMap = {
-  t_0: _Home2.default
+  t_0: _Vi2.default,
+  t_1: _En2.default
 
   // Template Tree
-};var templateTree = { c: { "404": { t: "t_0" }, "/": { t: "t_0" } }
+};var templateTree = { c: { "404": { t: "t_0" }, "/": { t: "t_0" }, "en": { t: "t_1" } }
 
   // Get template for given path
 };var getComponentForPath = function getComponentForPath(path) {
@@ -332,13 +532,13 @@ var Routes = function (_Component) {
 exports.default = Routes;
 
 /***/ }),
-/* 9 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router-dom");
 
 /***/ }),
-/* 10 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -348,160 +548,30 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(1);
+var _Page = __webpack_require__(3);
 
-var _classnames2 = _interopRequireDefault(_classnames);
+var _Page2 = _interopRequireDefault(_Page);
 
-var _Background = __webpack_require__(11);
+var _vi = __webpack_require__(32);
 
-var _Background2 = _interopRequireDefault(_Background);
+var data = _interopRequireWildcard(_vi);
 
-var _Section = __webpack_require__(19);
-
-var _Section2 = _interopRequireDefault(_Section);
-
-var _Message = __webpack_require__(20);
-
-var _Message2 = _interopRequireDefault(_Message);
-
-var _Icon = __webpack_require__(2);
-
-var _Icon2 = _interopRequireDefault(_Icon);
-
-var _Meta = __webpack_require__(24);
-
-var _Meta2 = _interopRequireDefault(_Meta);
-
-var _data = __webpack_require__(26);
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-// import 'ciser/build/ciser.min.css'
-
-
-var Home = function (_PureComponent) {
-  _inherits(Home, _PureComponent);
-
-  function Home() {
-    _classCallCheck(this, Home);
-
-    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
-  }
-
-  _createClass(Home, [{
-    key: 'render',
-    value: function render() {
-      var list = Object.keys(_data.sections);
-      return [_react2.default.createElement(_Meta2.default, _extends({ key: 'meta' }, _data.meta, { links: [] })), _react2.default.createElement(
-        'div',
-        {
-          key: 'content',
-          'data-component': 'Home',
-          className: 'relative',
-          style: { backgroundColor: '#f6f9fc' }
-        },
-        _react2.default.createElement(
-          _Background2.default,
-          {
-            className: 'relative aspect-ratio--16x9-ns aspect-ratio--4x3 bg-center cover',
-            image: '//res.cloudinary.com/lh-imagecloud/image/upload/v1515930477/Mesh-Triangles-Surface-Colorful-Angular-WallpapersByte-com-3840x2400_kfsxmi.jpg',
-            overlayColor: ['rgba(246, 249, 252, .75)', 'rgba(246, 249, 252, 1)']
-          },
-          _react2.default.createElement(
-            'div',
-            { className: 'absolute absolute--fill flex flex-column items-center justify-center w-100 h-100 z-3' },
-            _react2.default.createElement(
-              'div',
-              { className: 'box a-wobble mb4-ns mb3 w4-ns w3 ba bw2-ns bw1 b--white overflow-hidden br-100 t-all-ease' },
-              _react2.default.createElement(_Background2.default, {
-                className: 'w-100 aspect-ratio--1x1 bg-center cover br-100',
-                image: '//res.cloudinary.com/lh-imagecloud/image/upload/v1509441836/me.1114e9a3_igwxff.jpg'
-              })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'f2-ns f3' },
-              _react2.default.createElement(
-                'span',
-                { className: 'dib fw3 dark-gray a-slide-to-right' },
-                'Lam Hieu'
-              ),
-              _react2.default.createElement(
-                'span',
-                { className: 'dib fw1 gray a-slide-to-left' },
-                '\'s a developer'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'mt4-ns mt3 flex flex-wrap items-center justify-center' },
-              Object.keys(_data.socialMedia).map(function (k, i) {
-                return _react2.default.createElement(
-                  'a',
-                  {
-                    key: k,
-                    className: (0, _classnames2.default)(i % 2 === 0 ? 'a-slide-to-top' : 'a-slide-to-bottom', 'box flex items-center justify-center mh2-ns mh1s shadow-l-2 bg-white br-100 h2s-ns h2 w2s-ns w2 f3-ns f4 gray hover-dark-gray t-all-ease no-underline'),
-                    href: _data.socialMedia[k]
-                  },
-                  _react2.default.createElement(_Icon2.default, { name: k })
-                );
-              })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'absolute-ns bottom-2 mt3' },
-              _react2.default.createElement(_Icon2.default, {
-                name: 'angle-down',
-                className: 'db-ns dn a-slide-to-bottom a-s a-infinite f4-ns f5 gray'
-              }),
-              _react2.default.createElement(_Icon2.default, { name: 'angle-down', className: 'dn-ns db f4-ns f5 gray' })
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'main',
-          { className: 'w-90 mw6 center' },
-          (list || []).map(function (k) {
-            var _sections$k = _data.sections[k],
-                icon = _sections$k.icon,
-                color = _sections$k.color,
-                messages = _sections$k.messages;
-
-            return _react2.default.createElement(
-              _Section2.default,
-              { key: k, icon: icon, color: color },
-              (messages || []).map(function (_ref, i) {
-                var by = _ref.by,
-                    content = _ref.content;
-                return _react2.default.createElement(_Message2.default, { key: i, by: by, content: content });
-              })
-            );
-          })
-        )
-      )];
-    }
-  }]);
-
-  return Home;
-}(_react.PureComponent);
+var Home = function Home() {
+  return _react2.default.createElement(_Page2.default, { data: data });
+};
 
 exports.default = Home;
 
 /***/ }),
-/* 11 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -517,15 +587,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactProgressiveImage = __webpack_require__(12);
+var _reactProgressiveImage = __webpack_require__(18);
 
 var _reactProgressiveImage2 = _interopRequireDefault(_reactProgressiveImage);
 
-var _getImageSource = __webpack_require__(13);
+var _getImageSource = __webpack_require__(19);
 
 var _getImageSource2 = _interopRequireDefault(_getImageSource);
 
-var _getBackground = __webpack_require__(17);
+var _getBackground = __webpack_require__(23);
 
 var _getBackground2 = _interopRequireDefault(_getBackground);
 
@@ -598,13 +668,13 @@ function Background(_ref) {
 exports.default = Background;
 
 /***/ }),
-/* 12 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-progressive-image");
 
 /***/ }),
-/* 13 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -616,7 +686,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _getCloudinaryImage = __webpack_require__(14);
+var _getCloudinaryImage = __webpack_require__(20);
 
 var _getCloudinaryImage2 = _interopRequireDefault(_getCloudinaryImage);
 
@@ -652,7 +722,7 @@ function getImageSource(_ref) {
 exports.default = getImageSource;
 
 /***/ }),
-/* 14 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -662,11 +732,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _interpolate = __webpack_require__(15);
+var _interpolate = __webpack_require__(21);
 
 var _interpolate2 = _interopRequireDefault(_interpolate);
 
-var _getImageSize = __webpack_require__(16);
+var _getImageSize = __webpack_require__(22);
 
 var _getImageSize2 = _interopRequireDefault(_getImageSize);
 
@@ -703,13 +773,13 @@ function getCloudinaryImage(_ref) {
 exports.default = getCloudinaryImage;
 
 /***/ }),
-/* 15 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = require("interpolate");
 
 /***/ }),
-/* 16 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -751,7 +821,7 @@ function getImageSize(_ref) {
 }
 
 /***/ }),
-/* 17 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -761,7 +831,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getGradientColor = __webpack_require__(18);
+var _getGradientColor = __webpack_require__(24);
 
 var _getGradientColor2 = _interopRequireDefault(_getGradientColor);
 
@@ -778,7 +848,7 @@ function getBackground(_ref) {
 exports.default = getBackground;
 
 /***/ }),
-/* 18 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -794,7 +864,7 @@ function getGradientColor(color) {
 exports.default = getGradientColor;
 
 /***/ }),
-/* 19 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -852,7 +922,7 @@ function Section(_ref) {
 exports.default = Section;
 
 /***/ }),
-/* 20 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -872,13 +942,13 @@ var _classnames = __webpack_require__(1);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _reactMarkdown = __webpack_require__(21);
+var _reactMarkdown = __webpack_require__(27);
 
 var _reactMarkdown2 = _interopRequireDefault(_reactMarkdown);
 
-var _reactChartjs = __webpack_require__(22);
+var _reactChartjs = __webpack_require__(28);
 
-var _render = __webpack_require__(23);
+var _render = __webpack_require__(29);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1097,19 +1167,19 @@ var Message = function (_PureComponent) {
 exports.default = Message;
 
 /***/ }),
-/* 21 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-markdown");
 
 /***/ }),
-/* 22 */
+/* 28 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-chartjs-2");
 
 /***/ }),
-/* 23 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1277,7 +1347,7 @@ var TimeLine = function TimeLine(_ref3) {
 exports.TimeLine = TimeLine;
 
 /***/ }),
-/* 24 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1291,7 +1361,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHelmet = __webpack_require__(25);
+var _reactHelmet = __webpack_require__(31);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -1299,6 +1369,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Meta = function Meta(_ref) {
   var website = _ref.website,
+      lang = _ref.lang,
       title = _ref.title,
       keywords = _ref.keywords,
       image = _ref.image,
@@ -1313,7 +1384,7 @@ var Meta = function Meta(_ref) {
     links,
     _react2.default.createElement('meta', { key: 'charset', charSet: 'utf-8' }),
     _react2.default.createElement('meta', { httpEquiv: 'Content-Type', content: 'text/html; charset=utf-8' }),
-    _react2.default.createElement('meta', { name: 'language', content: 'vietnamese' }),
+    _react2.default.createElement('meta', { name: 'language', content: lang }),
     _react2.default.createElement('meta', { name: 'author', content: 'Lam Hieu' }),
     _react2.default.createElement('meta', { name: 'designer', content: 'Lam Hieu' }),
     _react2.default.createElement('meta', { key: 'keywords', property: 'keywords', content: keywords }),
@@ -1345,13 +1416,13 @@ var Meta = function Meta(_ref) {
 exports.default = Meta;
 
 /***/ }),
-/* 25 */
+/* 31 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-helmet");
 
 /***/ }),
-/* 26 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1362,23 +1433,23 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.sections = exports.socialMedia = exports.meta = undefined;
 
-var _cover = __webpack_require__(27);
+var _cover = __webpack_require__(4);
 
 var _cover2 = _interopRequireDefault(_cover);
 
-var _cover3 = __webpack_require__(28);
+var _cover3 = __webpack_require__(5);
 
 var _cover4 = _interopRequireDefault(_cover3);
 
-var _cover5 = __webpack_require__(29);
+var _cover5 = __webpack_require__(6);
 
 var _cover6 = _interopRequireDefault(_cover5);
 
-var _favicon32x = __webpack_require__(30);
+var _favicon32x = __webpack_require__(7);
 
 var _favicon32x2 = _interopRequireDefault(_favicon32x);
 
-var _favicon16x = __webpack_require__(31);
+var _favicon16x = __webpack_require__(8);
 
 var _favicon16x2 = _interopRequireDefault(_favicon16x);
 
@@ -1386,6 +1457,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var meta = exports.meta = {
   website: 'https://lamhieu.info',
+  lang: 'vietnamese',
   title: 'lamhieu - yep, never give up.',
   keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: [_cover2.default, _cover4.default, _cover6.default],
@@ -1731,37 +1803,421 @@ var sections = exports.sections = {
 };
 
 /***/ }),
-/* 27 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/cover-01.23dcbf12.jpg";
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Page = __webpack_require__(3);
+
+var _Page2 = _interopRequireDefault(_Page);
+
+var _en = __webpack_require__(34);
+
+var data = _interopRequireWildcard(_en);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Home = function Home() {
+  return _react2.default.createElement(_Page2.default, { data: data });
+};
+
+exports.default = Home;
 
 /***/ }),
-/* 28 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/cover-02.b4b4039f.jpg";
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.sections = exports.socialMedia = exports.meta = undefined;
+
+var _cover = __webpack_require__(4);
+
+var _cover2 = _interopRequireDefault(_cover);
+
+var _cover3 = __webpack_require__(5);
+
+var _cover4 = _interopRequireDefault(_cover3);
+
+var _cover5 = __webpack_require__(6);
+
+var _cover6 = _interopRequireDefault(_cover5);
+
+var _favicon32x = __webpack_require__(7);
+
+var _favicon32x2 = _interopRequireDefault(_favicon32x);
+
+var _favicon16x = __webpack_require__(8);
+
+var _favicon16x2 = _interopRequireDefault(_favicon16x);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var meta = exports.meta = {
+  website: 'https://lamhieu.info',
+  lang: 'english',
+  title: 'lamhieu - yep, never give up.',
+  keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
+  image: [_cover2.default, _cover4.default, _cover6.default],
+  description: 'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất',
+  favicon: {
+    '16x16': _favicon16x2.default,
+    '32x32': _favicon32x2.default
+  }
+};
+
+var socialMedia = exports.socialMedia = {
+  facebook: 'https://fb.com/lamhieu.me',
+  twitter: 'https://twitter.com/_lamhieu',
+  'github-alt': 'https://github.com/lamhieu-vk',
+  skype: 'skype:lamhieu@outlook.com?call',
+  envelope: 'mailto:lamhieu.vk@gmail.com'
+};
+
+var sections = exports.sections = {
+  intro: {
+    color: '#1E88E5',
+    icon: 'comment',
+    title: 'Introducation',
+    messages: [{
+      by: 'guest',
+      content: [{ markdown: 'tìm đến với **lamhieu.info** 😶' }]
+    }, {
+      by: 'author',
+      content: [{ markdown: 'chào mừng đã đến với trang của tôi 😆' }, { markdown: 'chúc bạn một ngày tốt lành!' }, { markdown: 'cơ mà bạn muốn biết gì về tôi nhỉ?' }]
+    }, {
+      by: 'guest',
+      content: [{ markdown: 'eo ơi 😳 cơ mà bạn là ai í nhỉ?' }]
+    }, {
+      by: 'author',
+      content: [{ markdown: 'tên tôi là **Hiếu**, Lâm Hiếu!' }]
+    }, {
+      by: 'guest',
+      content: [{ markdown: 'nói cho tôi thêm về bạn đi 🤔' }]
+    }, {
+      by: 'author',
+      content: [{ markdown: 'à vâng' }, {
+        markdown: 'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất. tôi thích tham gia các cộng đồng về lập trình, tôi thích xem những bài diễn thuyết của các bạn đi trước để củng cố thêm mớ kiến thức ít ỏi của mình 🤓 nên thật tuyệt nếu được học hỏi thêm gì đó từ bạn 😆'
+      }, {
+        markdown: 'tôi mang trong mình niềm đam mê về lập trình rất lớn, no dường như đã thấm sâu vào cơ thể tôi ngay từ những ngày tôi biết đến nó, cơ duyên tôi tìm đến lập trình 💻 là một ngày rất tình cờ khi tôi còn là một học sinh tiểu học 👨‍🎓, dần dần thì tôi biết nó là đam mê của đời tôi 👨‍💻'
+      }, {
+        markdown: 'vì lập trình với tôi là đam mê nên có lẻ tôi rất khó có thể sống nếu thiếu nó 😙'
+      }]
+    }, {
+      by: 'guest',
+      content: [{ markdown: 'sở thích của bạn là gì?' }]
+    }, {
+      by: 'author',
+      content: [{
+        markdown: 'sở thích của tôi cũng đơn giản thôi, đó là được chụp ảnh nghệ thuật 📸 xem phim 🎞 nghe nhạc 🎶 đọc sách 📚 du lịch 🏍 và nhiều nhiều thứ khác nữa 😝'
+      }]
+    }]
+  },
+  info: {
+    color: '#00897b',
+    icon: 'credit-card',
+    title: 'Info',
+    messages: [{
+      by: 'guest',
+      content: [{ markdown: 'bạn đến từ đâu ấy nhỉ? 🤔' }]
+    }, {
+      by: 'author',
+      content: [{ markdown: '**bạc liêu** bạn ơi, nơi ấy hơi có bị đỉnh đó nha 😎' }, {
+        markdown: 'à mà sẵn đây khai luôn, tôi là **nam**, tôi là có quốc tịch **việt nam** 🇻🇳 nhưng được gọi là công dân **quốc tế** í ạ 😄'
+      }, {
+        markdown: 'vì là người việt nên tôi nói tiếng việt rất giỏi 🤪 còn tiếng anh thì tôi đang luyện tập thêm đây ạ 😔'
+      }]
+    }, {
+      by: 'guest',
+      content: [{ markdown: 'à mà bạn bao nhiêu tuổi nhỉ?' }]
+    }, {
+      by: 'author',
+      content: [{ markdown: 'già lắm rồi nên không nói đâu bạn ơi 😰' }]
+    }, {
+      by: 'guest',
+      content: [{ markdown: 'trích dẫn yêu thích của bạn là gì?' }]
+    }, {
+      by: 'author',
+      content: [{ markdown: '**yep, never give up.**' }]
+    }]
+  },
+  experience: {
+    color: '#f4511e',
+    icon: 'object-ungroup',
+    title: 'Experience',
+    messages: [{
+      by: 'guest',
+      content: [{
+        markdown: 'tôi hơi tò mò về kinh nghiệm trong công việc của bạn đấy 😐'
+      }]
+    }, {
+      by: 'author',
+      content: [{
+        progress: {
+          title: 'front-end',
+          items: [{
+            name: 'html & css',
+            value: 90
+          }, {
+            name: 'javascript (react, jquery,...) - es6/es7',
+            value: 85
+          }]
+        }
+      }, {
+        progress: {
+          title: 'back-end',
+          items: [{
+            name: 'php',
+            value: 75
+          }, {
+            name: 'mysql',
+            value: 60
+          }, {
+            name: 'nodejs',
+            value: 65
+          }, {
+            name: 'mongodb',
+            value: 45
+          }]
+        }
+      }, {
+        progress: {
+          title: '...',
+          items: [{
+            name: 'caching',
+            value: 60
+          }, {
+            name: 'ffmpeg',
+            value: 45
+          }, {
+            name: 'imagick',
+            value: 55
+          }, {
+            name: 'bash',
+            value: 25
+          }, {
+            name: 'flow / eslint',
+            value: 70
+          }, {
+            name: 'graphql',
+            value: 55
+          }, {
+            name: 'git',
+            value: 45
+          }, {
+            name: 'jest / enzyme',
+            value: 55
+          }, {
+            name: 'design / animations',
+            value: 45
+          }]
+        }
+      }, {
+        markdown: 'nói thêm một chút, những thứ tôi liệt kê là những thứ đã làm qua và tôi không ngại nếu được học hỏi thêm về những công nghệ mới nếu các dự án của tôi thực hiện cần đến nó, học hỏi thêm những thứ mới là một trong những điều tuyệt vời ấy mà tôi thích 🤩. ngoài ra, tôi còn là người lập kiêm hỗ trợ của [ciser](https://github.com/lamhieu-vk/ciser), một công cụ giúp rút ngắn thời gian thiết kế giao diện đa màn hình trong lập trình, một công cụ rất hữu ít nếu bạn sử dụng 😆'
+      }]
+    }]
+  },
+  skills: {
+    color: '#ffb300',
+    icon: 'lightbulb-o',
+    title: 'Skills',
+    messages: [{
+      by: 'guest',
+      content: [{
+        markdown: 'ngoài những thứ kể trên, bạn còn có gì cho tôi biết thêm không?'
+      }]
+    }, {
+      by: 'author',
+      content: [{
+        markdown: 'à, tôi còn có vài kỹ năng mềm cơ bản nữa ấy... 😅'
+      }, {
+        progress: {
+          items: [{
+            name: 'giao tiếp',
+            value: 85
+          }, {
+            name: 'sáng tạo',
+            value: 90
+          }, {
+            name: 'tư duy phản biện',
+            value: 75
+          }, {
+            name: 'tinh thần học hỏi',
+            value: 85
+          }, {
+            name: 'kỹ năng phân tích',
+            value: 80
+          }, {
+            name: 'làm việc nhóm',
+            value: 77.5
+          }]
+        }
+      }]
+    }]
+  },
+  education: {
+    color: '#5e35b1',
+    icon: 'university',
+    title: 'Education',
+    messages: [{
+      by: 'guest',
+      content: [{
+        markdown: 'cơ mà hình như bạn chưa nói về việc học của mình thì phải? 🤔'
+      }]
+    }, {
+      by: 'author',
+      content: [{
+        markdown: 'thật ra thì việc học của tôi cũng chẳng có gì đặt biệt cả và nó thế này...'
+      }, {
+        timeline: [{
+          title: 'tốt nghiệp trung học',
+          subtitle: 'trường thpt gành hào',
+          date: '🤷‍♂️ - 07/2017'
+        }]
+      }]
+    }]
+  },
+  workplaces: {
+    color: '#546e7a',
+    icon: 'suitcase',
+    title: 'Workplaces',
+    messages: [{
+      by: 'guest',
+      content: [{
+        markdown: 'thế còn công việc của bạn thì sao?'
+      }]
+    }, {
+      by: 'author',
+      content: [{
+        markdown: 'sau khi học xong trung học, tôi quyết định tạm dừng con đường học tập mà đi theo đuổi đam mê ngay lúc đó... đến tận hôm nay luôn ạ 🤓'
+      }, {
+        timeline: [{
+          title: 'người sáng lập & phát triển',
+          subtitle: 'giccos',
+          date: '03/2015 - 10/2016',
+          description: 'đây là dự án phát triển mã nguồn mạng xã hội được thực hiện bởi cá nhân tôi nhầm phân tích, tìm hiểu cách thức hoạt động của hệ thống lớn, phục vụ như người người dùng với số lượng truy cập cao, đảm bảo tính ổn định và trãi nghiệm người dùng tốt nhất. đây là dự án cá nhân trong lúc tôi còn là một học sinh cấp ba, nó mở ra cho tôi một cách nhìn mới về lập trình hướng đối tượng'
+        }],
+        progress: {
+          items: [{
+            name: 'front-end (html & css, js, jquery,...)',
+            value: 35
+          }, {
+            name: 'back-end (php & mysql)',
+            value: 50
+          }, {
+            name: '... (imagick, ffmpeg, bash,...)',
+            value: 15
+          }]
+        }
+      }, {
+        timeline: [{
+          title: 'lập trình viên',
+          subtitle: 'connected jsc',
+          date: '07/2017 - 02/2018',
+          description: 'tại môi trường làm việc nơi đây tôi được học hỏi thêm rất nhiều về mặt kiến thức lẫn khả năng tư duy phân tích vấn đề. chúng tôi (tôi + 1) cùng nhau làm việc hơn 20 dự án lớn nhỏ khác nhau, chúng tôi phát triển công cụ giúp đơn giản hóa việc phát triển một website nhưng vẫn tối ưu hóa những tính năng và hiệu năng cần thiết'
+        }],
+        progress: {
+          items: [{
+            name: 'front-end (html & css, js, react,...)',
+            value: 70
+          }, {
+            name: 'back-end (nodejs & mongodb)',
+            value: 30
+          }]
+        }
+      }, {
+        markdown: 'hiện tại tôi đang nghiên cứu và trao dồi thêm kinh nghiệm làm việc của mình, nếu bạn muốn hợp tác với tôi thì có thể liên lạc với tôi theo thông tin cuối trang 🤙 và thật tuyệt vời nếu được học hỏi thêm những điều thú vị từ bạn 👏'
+      }]
+    }]
+  },
+  contact: {
+    color: '#6D4C41',
+    icon: 'user',
+    title: 'Contact',
+    messages: [{
+      by: 'guest',
+      content: [{
+        markdown: 'tôi có thể liên lạc với bạn bằng cách nào? 🤔'
+      }]
+    }, {
+      by: 'author',
+      content: [{
+        markdown: 'à vâng 😶 đây là thông tin liên lạc của tôi...'
+      }, {
+        markdown: '### thông tin liên lạc',
+        contact: [{
+          icon: 'home',
+          href: '#',
+          label: 'website',
+          value: 'lamhieu.info'
+        }, {
+          icon: 'phone',
+          href: 'tel:0946083033',
+          label: 'phone',
+          value: '+84 946 083 033'
+        }, {
+          icon: 'envelope',
+          href: 'mailto:lamhieu.vk@gmail.com',
+          label: 'email',
+          value: 'lamhieu.vk@gmail.com'
+        }, {
+          icon: 'facebook',
+          href: 'https://fb.com/lamhieu.me',
+          label: 'facebook',
+          value: 'fb/lamhieu.me'
+        }, {
+          icon: 'twitter',
+          href: 'https://twitter.com/_lamhieu',
+          label: 'twitter',
+          value: 'twitter/_lamhieu'
+        }, {
+          icon: 'github-alt',
+          href: 'https://github.com/lamhieu-vk',
+          label: 'github',
+          value: 'github/lamhieu-vk'
+        }, {
+          icon: 'skype',
+          href: 'skype:lamhieu@outlook.com?call',
+          label: 'skype',
+          value: 'lamhieu@outlook.com'
+        }]
+      }, {
+        markdown: 'liên lạc với tôi khi bạn cần sự giúp đỡ 👍'
+      }]
+    }, {
+      by: 'guest',
+      content: [{
+        markdown: 'à vâng, tôi sẽ liên lạc với bạn sớm thôi...'
+      }]
+    }, {
+      by: 'author',
+      content: [{
+        markdown: 'ohh yeah, cảm ơn vì đã ghé thăm nhà tôi 😆'
+      }, {
+        note: 'styled by [ciser](https://github.com/lamhieu-vk/ciser), design by Lam Hieu'
+      }]
+    }]
+  }
+};
 
 /***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/cover-03.70b918ad.jpg";
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB50lEQVRYhdVWS0tCQRg9Pq6p9/Ywu6WU0gOLEiIoEHFTmyDaRLtaBe36P21a1NJdQUEQrYKIgqIi6WUPMtIsM7UUzawW+bjiWE4UY2d15575vu/MHGbmk6lnTO9gCDnL4mUhQDllm8gOnPsLeIyHAQADLQ501lsKAm6f7jB/uExMNtY9Ap2mpuD/ns+FDc82AMAgiBi1DucEiLw+O1DIFdlvoYKHlMsg/poouhqdpoYYw6v4XEG5Mm8Ocwtk9qWh7Ck4vHcjkV6huboReq0OANBW2wxrQwcA4PklitPABTFZl2iBmlMD+Nx2T+gGAOCPBuCN3AIAeE6L9rrWnIBSjqHd1ItBSz/VyhaPVrDrc307j7kFStqAp8QzDvzHRK7HaIWW0/ytgFA8gtWzNSJn0bdQC/h/FqgUHJqqjESOk1OnoxfQIIiY7BunLlQMzC1gLiDvIpqyTRDvcimuw17M7jiJ3E/ime8AcwHUp8AgiJD2EFKQeoFfF8ApuG99psH/syAYC2H9aovIDbQ6UFkh/K2AaDJW9J23m/uoBZSXBXs+V14DSULqLQW7qZfInQTO4X64/DI+lO66MyipJZOiqcpY9DGa3pxDIBakSVdmFpSCl1QS12EvkUu+vVILoLbgt8HcAuYCPgBldIQ/I4Q31gAAAABJRU5ErkJggg=="
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABhklEQVQ4jaWQS0sCYRiFH2skL5iGXdTGxlVmoUVRq3ZBRBD0+/oB7doEEW6CIIjaSFAYFUQ2aKWTl5wZL+W0qAaiPit6N+8H5+V85zkO10bU4h8jzY/OcK+XyFVUJofH8To9AFyXc5SMRwCGvYMoARmAeksnW7wkFogy5A0ircaXOFYz5Coqi8oCYd8IANvZtG2gBGRW40sA3FbzZIuXJEMJZiNJHLHNOctoG9SadYKeAeT+COuTK1QaNcy2CYDH6cHv8rF1tkOhdo9mlvH3+XA73Uh39QebRzPKuCUXAJ1Oh+fOy9vbetsl/RHNLANQbT5RbT4hico5uDkiUzgFYH50xkb4UqLIYDo8heyPADDkDYrOxAZKQLab7zYO10bU+i7idjbdFeFDFyaIDYwh9Uh2mj8jpEIJUqHEjwhCg/3rQ86LVwBMjcRZVBbEBvWWzm01/0kw2w2knl4AjLb5RddbBvBe4nfOaxPLzEaSAByrGXYv9v6GcFI4Q33/tahrojNxgt/OKwkCl/We8YkmAAAAAElFTkSuQmCC"
-
-/***/ }),
-/* 32 */
+/* 35 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -1769,4 +2225,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.4f0a2068.js.map
+//# sourceMappingURL=app.static.178ceabb.js.map

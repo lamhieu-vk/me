@@ -3,15 +3,17 @@
     import { Route } from 'react-router-dom'
 
     // Template Imports
-    import src_containers_Home from '../src/containers/Home'
+    import src_containers_Home_Vi from '../src/containers/Home/Vi'
+import src_containers_Home_En from '../src/containers/Home/En'
 
     // Template Map
     const templateMap = {
-      t_0: src_containers_Home
+      t_0: src_containers_Home_Vi,
+t_1: src_containers_Home_En
     }
 
     // Template Tree
-    const templateTree = {c:{"404":{t:"t_0"},"/":{t:"t_0"}}}
+    const templateTree = {c:{"404":{t:"t_0"},"/":{t:"t_0"},"en":{t:"t_1"}}}
 
     // Get template for given path
     const getComponentForPath = path => {
