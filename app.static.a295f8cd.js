@@ -588,7 +588,8 @@ exports.default = (0, _reactSizeme2.default)({
   refreshRate: 16,
   monitorHeight: true,
   monitorWidth: true,
-  enableSSRBehaviour: false
+  enableSSRBehaviour: false,
+  noPlaceholders: false
 })(Background);
 
 /***/ }),
@@ -1727,4 +1728,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.764699d3.js.map
+//# sourceMappingURL=app.static.a295f8cd.js.map
