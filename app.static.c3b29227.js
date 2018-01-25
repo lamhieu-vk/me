@@ -1292,7 +1292,8 @@ var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Meta = function Meta(_ref) {
-  var title = _ref.title,
+  var website = _ref.website,
+      title = _ref.title,
       keywords = _ref.keywords,
       image = _ref.image,
       description = _ref.description,
@@ -1304,22 +1305,23 @@ var Meta = function Meta(_ref) {
     links,
     _react2.default.createElement('meta', { key: 'charset', charSet: 'utf-8' }),
     _react2.default.createElement('meta', { httpEquiv: 'Content-Type', content: 'text/html; charset=utf-8' }),
+    _react2.default.createElement('meta', { name: 'language', content: 'vietnamese' }),
     _react2.default.createElement('meta', { name: 'author', content: 'Lam Hieu' }),
     _react2.default.createElement('meta', { name: 'designer', content: 'Lam Hieu' }),
     _react2.default.createElement('meta', { key: 'keywords', property: 'keywords', content: keywords }),
-    _react2.default.createElement('meta', { key: 'image', itemProp: 'image', content: image }),
+    _react2.default.createElement('meta', { key: 'image', itemProp: 'image', content: '' + (website || '') + image }),
     _react2.default.createElement('meta', { key: 'description', itemProp: 'description', content: description }),
     _react2.default.createElement('meta', { key: 'name', itemProp: 'name', content: title }),
-    _react2.default.createElement('meta', { key: 'twitter:image', name: 'twitter:image', content: image }),
+    _react2.default.createElement('meta', { key: 'twitter:image', name: 'twitter:image', content: '' + (website || '') + image }),
     _react2.default.createElement('meta', { key: 'twitter:description', name: 'twitter:description', content: description }),
     _react2.default.createElement('meta', { key: 'twitter:title', name: 'twitter:title', content: title }),
     _react2.default.createElement('meta', { key: 'twitter:card', name: 'twitter:card', content: 'summary' }),
     _react2.default.createElement('meta', { key: 'og:description', property: 'og:description', content: description }),
-    _react2.default.createElement('meta', { key: 'og:image', property: 'og:image', content: image }),
+    _react2.default.createElement('meta', { key: 'og:image', property: 'og:image', content: '' + (website || '') + image }),
     _react2.default.createElement('meta', { key: 'og:title', property: 'og:title', content: title }),
     _react2.default.createElement('meta', { key: 'og:type', property: 'og:type', content: 'website' }),
-    _react2.default.createElement('meta', { key: 'googlebot', name: 'googlebot', content: 'index,follow' }),
-    _react2.default.createElement('meta', { key: 'robots', name: 'robots', content: 'index,follow' }),
+    _react2.default.createElement('meta', { key: 'googlebot', name: 'googlebot', content: 'all,index,follow' }),
+    _react2.default.createElement('meta', { key: 'robots', name: 'robots', content: 'all,index,follow' }),
     _react2.default.createElement('meta', { key: 'subject', name: 'subject' }),
     _react2.default.createElement('meta', { key: 'description', name: 'description', content: description }),
     _react2.default.createElement('link', { key: 'icon32x32', rel: 'icon', type: 'image/png', href: favicon['32x32'], sizes: '32x32' }),
@@ -1367,6 +1369,7 @@ var _favicon16x2 = _interopRequireDefault(_favicon16x);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var meta = exports.meta = {
+  website: 'https://lamhieu.info',
   title: 'lamhieu - yep, never give up.',
   keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: _cover2.default,
@@ -1731,4 +1734,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.8f344405.js.map
+//# sourceMappingURL=app.static.c3b29227.js.map
