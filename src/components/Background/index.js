@@ -46,4 +46,5 @@ export default sizeMe({
   monitorHeight: true,
   monitorWidth: true,
   enableSSRBehaviour: false,
+  noPlaceholders: false,
 })(Background)

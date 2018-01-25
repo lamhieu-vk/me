@@ -14,24 +14,7 @@ class Home extends PureComponent<any, any> {
   render () {
     const list = Object.keys(sections)
     return [
-      <Meta
-        key="meta"
-        {...meta}
-        links={[
-          <link
-            href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700"
-            rel="stylesheet"
-          />,
-          <link
-            href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css"
-            rel="stylesheet"
-          />,
-          <link
-            href="https://unpkg.com/ciser/build/ciser.css"
-            rel="stylesheet"
-          />
-        ]}
-      />,
+      <Meta key="meta" {...meta} links={[]} />,
       <div
         key="content"
         data-component="Home"
