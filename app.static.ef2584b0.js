@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -124,6 +124,12 @@ exports.default = Icon;
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-static");
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -288,37 +294,37 @@ var Home = function (_PureComponent) {
 exports.default = Home;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/cover-01.23dcbf12.jpg";
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/cover-02.b4b4039f.jpg";
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/cover-03.70b918ad.jpg";
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB50lEQVRYhdVWS0tCQRg9Pq6p9/Ywu6WU0gOLEiIoEHFTmyDaRLtaBe36P21a1NJdQUEQrYKIgqIi6WUPMtIsM7UUzawW+bjiWE4UY2d15575vu/MHGbmk6lnTO9gCDnL4mUhQDllm8gOnPsLeIyHAQADLQ501lsKAm6f7jB/uExMNtY9Ap2mpuD/ns+FDc82AMAgiBi1DucEiLw+O1DIFdlvoYKHlMsg/poouhqdpoYYw6v4XEG5Mm8Ocwtk9qWh7Ck4vHcjkV6huboReq0OANBW2wxrQwcA4PklitPABTFZl2iBmlMD+Nx2T+gGAOCPBuCN3AIAeE6L9rrWnIBSjqHd1ItBSz/VyhaPVrDrc307j7kFStqAp8QzDvzHRK7HaIWW0/ytgFA8gtWzNSJn0bdQC/h/FqgUHJqqjESOk1OnoxfQIIiY7BunLlQMzC1gLiDvIpqyTRDvcimuw17M7jiJ3E/ime8AcwHUp8AgiJD2EFKQeoFfF8ApuG99psH/syAYC2H9aovIDbQ6UFkh/K2AaDJW9J23m/uoBZSXBXs+V14DSULqLQW7qZfInQTO4X64/DI+lO66MyipJZOiqcpY9DGa3pxDIBakSVdmFpSCl1QS12EvkUu+vVILoLbgt8HcAuYCPgBldIQ/I4Q31gAAAABJRU5ErkJggg=="
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABhklEQVQ4jaWQS0sCYRiFH2skL5iGXdTGxlVmoUVRq3ZBRBD0+/oB7doEEW6CIIjaSFAYFUQ2aKWTl5wZL+W0qAaiPit6N+8H5+V85zkO10bU4h8jzY/OcK+XyFVUJofH8To9AFyXc5SMRwCGvYMoARmAeksnW7wkFogy5A0ircaXOFYz5Coqi8oCYd8IANvZtG2gBGRW40sA3FbzZIuXJEMJZiNJHLHNOctoG9SadYKeAeT+COuTK1QaNcy2CYDH6cHv8rF1tkOhdo9mlvH3+XA73Uh39QebRzPKuCUXAJ1Oh+fOy9vbetsl/RHNLANQbT5RbT4hico5uDkiUzgFYH50xkb4UqLIYDo8heyPADDkDYrOxAZKQLab7zYO10bU+i7idjbdFeFDFyaIDYwh9Uh2mj8jpEIJUqHEjwhCg/3rQ86LVwBMjcRZVBbEBvWWzm01/0kw2w2knl4AjLb5RddbBvBe4nfOaxPLzEaSAByrGXYv9v6GcFI4Q33/tahrojNxgt/OKwkCl/We8YkmAAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -332,13 +338,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(10);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactHotLoader = __webpack_require__(11);
+var _reactHotLoader = __webpack_require__(12);
 
-var _App = __webpack_require__(12);
+var _App = __webpack_require__(13);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -374,19 +380,19 @@ if (typeof document !== 'undefined') {
 }
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -400,7 +406,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(13);
+var _reactStatic = __webpack_require__(3);
 
 var _reactStaticRoutes = __webpack_require__(14);
 
@@ -417,12 +423,6 @@ exports.default = function () {
     _react2.default.createElement(_reactStaticRoutes2.default, null)
   );
 };
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-static");
 
 /***/ }),
 /* 14 */
@@ -552,7 +552,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Page = __webpack_require__(3);
+var _Page = __webpack_require__(4);
 
 var _Page2 = _interopRequireDefault(_Page);
 
@@ -938,6 +938,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactStatic = __webpack_require__(3);
+
 var _classnames = __webpack_require__(1);
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -1096,6 +1098,26 @@ var Message = function (_PureComponent) {
             { key: idx, className: 'note w-100' },
             _react2.default.createElement(_reactMarkdown2.default, { className: 'md f7 ttu fw3', source: data, skipHtml: true })
           );
+        },
+        switchLanguge: function switchLanguge() {
+          return _react2.default.createElement(
+            'div',
+            { key: idx, className: 'switchLanguge flex flex-wrap w-100' },
+            _react2.default.createElement(_reactMarkdown2.default, {
+              className: 'md mr1 f7 ttu fw3',
+              source: data && data.text,
+              skipHtml: true
+            }),
+            (data && data.items || []).map(function (_ref7) {
+              var href = _ref7.href,
+                  label = _ref7.label;
+              return _react2.default.createElement(
+                _reactStatic.Link,
+                { className: 'f7 ttu fw4 gray hover-dark-gray t-all-ease no-underline', key: href, to: href },
+                label
+              );
+            })
+          );
         }
       };
       return list[type] && list[type](data) || null;
@@ -1136,8 +1158,8 @@ var Message = function (_PureComponent) {
       return _react2.default.createElement(
         'div',
         {
-          ref: function ref(_ref7) {
-            _this2.message = _ref7;
+          ref: function ref(_ref8) {
+            _this2.message = _ref8;
             return true;
           },
           'data-component': 'Message',
@@ -1433,23 +1455,23 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.sections = exports.socialMedia = exports.meta = undefined;
 
-var _cover = __webpack_require__(4);
+var _cover = __webpack_require__(5);
 
 var _cover2 = _interopRequireDefault(_cover);
 
-var _cover3 = __webpack_require__(5);
+var _cover3 = __webpack_require__(6);
 
 var _cover4 = _interopRequireDefault(_cover3);
 
-var _cover5 = __webpack_require__(6);
+var _cover5 = __webpack_require__(7);
 
 var _cover6 = _interopRequireDefault(_cover5);
 
-var _favicon32x = __webpack_require__(7);
+var _favicon32x = __webpack_require__(8);
 
 var _favicon32x2 = _interopRequireDefault(_favicon32x);
 
-var _favicon16x = __webpack_require__(8);
+var _favicon16x = __webpack_require__(9);
 
 var _favicon16x2 = _interopRequireDefault(_favicon16x);
 
@@ -1796,7 +1818,15 @@ var sections = exports.sections = {
       content: [{
         markdown: 'ohh yeah, cảm ơn vì đã ghé thăm nhà tôi 😆'
       }, {
-        note: 'styled by [ciser](https://github.com/lamhieu-vk/ciser), design by Lam Hieu'
+        note: 'giao diện bởi [ciser](https://github.com/lamhieu-vk/ciser), thiết kế bởi Lâm Hiếu'
+      }, {
+        switchLanguge: {
+          text: 'xem ở ngôn ngữ khác',
+          items: [{
+            href: '/en',
+            label: 'tiếng anh'
+          }]
+        }
       }]
     }]
   }
@@ -1817,7 +1847,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Page = __webpack_require__(3);
+var _Page = __webpack_require__(4);
 
 var _Page2 = _interopRequireDefault(_Page);
 
@@ -1847,23 +1877,23 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.sections = exports.socialMedia = exports.meta = undefined;
 
-var _cover = __webpack_require__(4);
+var _cover = __webpack_require__(5);
 
 var _cover2 = _interopRequireDefault(_cover);
 
-var _cover3 = __webpack_require__(5);
+var _cover3 = __webpack_require__(6);
 
 var _cover4 = _interopRequireDefault(_cover3);
 
-var _cover5 = __webpack_require__(6);
+var _cover5 = __webpack_require__(7);
 
 var _cover6 = _interopRequireDefault(_cover5);
 
-var _favicon32x = __webpack_require__(7);
+var _favicon32x = __webpack_require__(8);
 
 var _favicon32x2 = _interopRequireDefault(_favicon32x);
 
-var _favicon16x = __webpack_require__(8);
+var _favicon16x = __webpack_require__(9);
 
 var _favicon16x2 = _interopRequireDefault(_favicon16x);
 
@@ -1871,7 +1901,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var meta = exports.meta = {
   website: 'https://lamhieu.info',
-  lang: 'english',
+  lang: 'vietnamese',
   title: 'lamhieu - yep, never give up.',
   keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: [_cover2.default, _cover4.default, _cover6.default],
@@ -2210,7 +2240,15 @@ var sections = exports.sections = {
       content: [{
         markdown: 'ohh yeah, cảm ơn vì đã ghé thăm nhà tôi 😆'
       }, {
-        note: 'styled by [ciser](https://github.com/lamhieu-vk/ciser), design by Lam Hieu'
+        note: 'giao diện bởi [ciser](https://github.com/lamhieu-vk/ciser), thiết kế bởi Lâm Hiếu'
+      }, {
+        switchLanguge: {
+          text: 'xem ở ngôn ngữ khác',
+          items: [{
+            href: '/',
+            label: 'tiếng việt'
+          }]
+        }
       }]
     }]
   }
@@ -2225,4 +2263,4 @@ var sections = exports.sections = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.178ceabb.js.map
+//# sourceMappingURL=app.static.ef2584b0.js.map
