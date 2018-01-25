@@ -1,9 +1,12 @@
 {
-  "name": "react-static-example-basic",
+  "name": "me",
   "version": "1.0.1",
+  "homepage": "https://lamhieu.info",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-static start",
     "build": "react-static build",
     "serve": "serve dist -p 3000"
