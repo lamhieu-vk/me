@@ -10,13 +10,9 @@ export const meta = {
   title: 'lamhieu - yep, never give up.',
   keywords:
     'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
-  image: [
-    imageCover01,
-    imageCover02,
-    imageCover03,
-  ],
+  image: [imageCover01, imageCover02, imageCover03],
   description:
-    'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất',
+    "I'm a programmer, I love my job. I always want to bring people with useful products with the best quality",
   favicon: {
     '16x16': favicon16x16,
     '32x32': favicon32x32
@@ -39,56 +35,56 @@ export const sections = {
     messages: [
       {
         by: 'guest',
-        content: [{ markdown: 'tìm đến với **lamhieu.info** 😶' }]
+        content: [{ markdown: 'come to **lamhieu.info** 😶' }]
       },
       {
         by: 'author',
         content: [
-          { markdown: 'chào mừng đã đến với trang của tôi 😆' },
-          { markdown: 'chúc bạn một ngày tốt lành!' },
-          { markdown: 'cơ mà bạn muốn biết gì về tôi nhỉ?' }
+          { markdown: 'welcome to my home 😆' },
+          { markdown: 'wish you a good day!' },
+          { markdown: 'well ! do you want to know anything about me?' }
         ]
       },
       {
         by: 'guest',
-        content: [{ markdown: 'eo ơi 😳 cơ mà bạn là ai í nhỉ?' }]
+        content: [{ markdown: 'so 😳 who are you?' }]
       },
       {
         by: 'author',
-        content: [{ markdown: 'tên tôi là **Hiếu**, Lâm Hiếu!' }]
+        content: [{ markdown: "I'm **Hieu**, Lam Hieu!" }]
       },
       {
         by: 'guest',
-        content: [{ markdown: 'nói cho tôi thêm về bạn đi 🤔' }]
+        content: [{ markdown: 'could you talk about yourself 🤔' }]
       },
       {
         by: 'author',
         content: [
-          { markdown: 'à vâng' },
+          { markdown: 'oh great!' },
           {
             markdown:
-              'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất. tôi thích tham gia các cộng đồng về lập trình, tôi thích xem những bài diễn thuyết của các bạn đi trước để củng cố thêm mớ kiến thức ít ỏi của mình 🤓 nên thật tuyệt nếu được học hỏi thêm gì đó từ bạn 😆'
+              "I'm a  programmer. I love my job. I always wants to bring people with useful products with the best quality. I love participate in the program community. I love watch your speeches go ahead to reinfrorce my little knowledge 🤓, so it's great to learn something from you 😆"
           },
           {
             markdown:
-              'tôi mang trong mình niềm đam mê về lập trình rất lớn, no dường như đã thấm sâu vào cơ thể tôi ngay từ những ngày tôi biết đến nó, cơ duyên tôi tìm đến lập trình 💻 là một ngày rất tình cờ khi tôi còn là một học sinh tiểu học 👨‍🎓, dần dần thì tôi biết nó là đam mê của đời tôi 👨‍💻'
+              'I have a great passion for programming 💻. It seemed to have panetrated my mind when i knew it. my opportunity to programer was a coincidental day when I learned  elementary. Gradually 🎓, I knew it and I realized that it was my passion 👨‍💻'
           },
           {
             markdown:
-              'vì lập trình với tôi là đam mê nên có lẻ tôi rất khó có thể sống nếu thiếu nó 😙'
+              'programming is my passion. so my life will be boring without it 😙'
           }
         ]
       },
       {
         by: 'guest',
-        content: [{ markdown: 'sở thích của bạn là gì?' }]
+        content: [{ markdown: "what's your hobby?" }]
       },
       {
         by: 'author',
         content: [
           {
             markdown:
-              'sở thích của tôi cũng đơn giản thôi, đó là được chụp ảnh nghệ thuật 📸 xem phim 🎞 nghe nhạc 🎶 đọc sách 📚 du lịch 🏍 và nhiều nhiều thứ khác nữa 😝'
+              "my hobbies is simple. that's particularly for art photography 📸, movie 🎞, listen to music 🎶, read books 📚, travel 🏍 and so on.... 😝"
           }
         ]
       }
@@ -101,33 +97,36 @@ export const sections = {
     messages: [
       {
         by: 'guest',
-        content: [{ markdown: 'bạn đến từ đâu ấy nhỉ? 🤔' }]
+        content: [{ markdown: "so what's your hometown? 🤔" }]
       },
       {
         by: 'author',
         content: [
-          { markdown: '**bạc liêu** bạn ơi, nơi ấy hơi có bị đỉnh đó nha 😎' },
           {
             markdown:
-              'à mà sẵn đây khai luôn, tôi là **nam**, tôi là có quốc tịch **việt nam** 🇻🇳 nhưng được gọi là công dân **quốc tế** í ạ 😄'
+              "my hometown is **bac lieu** city. it's an interesting city 😎"
           },
           {
             markdown:
-              'vì là người việt nên tôi nói tiếng việt rất giỏi 🤪 còn tiếng anh thì tôi đang luyện tập thêm đây ạ 😔'
+              "by the way, I will introduce myself.  I'm Lam Hieu. my gender is **male**. my nationality is **Vietnam** but I'm **international citizens** 😄"
+          },
+          {
+            markdown:
+              "I'm from in **vietnam** so I can speak **vietnamese** very well 🤪. other than **vietnamese**, I'm improving my **english** furthe 😔"
           }
         ]
       },
       {
         by: 'guest',
-        content: [{ markdown: 'à mà bạn bao nhiêu tuổi nhỉ?' }]
+        content: [{ markdown: 'how old are you?' }]
       },
       {
         by: 'author',
-        content: [{ markdown: 'già lắm rồi nên không nói đâu bạn ơi 😰' }]
+        content: [{ markdown: "I think I'm old but people call me boy 😰" }]
       },
       {
         by: 'guest',
-        content: [{ markdown: 'trích dẫn yêu thích của bạn là gì?' }]
+        content: [{ markdown: 'what your favorite quotes?' }]
       },
       {
         by: 'author',
@@ -144,8 +143,7 @@ export const sections = {
         by: 'guest',
         content: [
           {
-            markdown:
-              'tôi hơi tò mò về kinh nghiệm trong công việc của bạn đấy 😐'
+            markdown: "I'm quite curious about your work 😐"
           }
         ]
       },
@@ -235,7 +233,7 @@ export const sections = {
           },
           {
             markdown:
-              'nói thêm một chút, những thứ tôi liệt kê là những thứ đã làm qua và tôi không ngại nếu được học hỏi thêm về những công nghệ mới nếu các dự án của tôi thực hiện cần đến nó, học hỏi thêm những thứ mới là một trong những điều tuyệt vời ấy mà tôi thích 🤩. ngoài ra, tôi còn là người lập kiêm hỗ trợ của [ciser](https://github.com/lamhieu-vk/ciser), một công cụ giúp rút ngắn thời gian thiết kế giao diện đa màn hình trong lập trình, một công cụ rất hữu ít nếu bạn sử dụng 😆'
+              "to talk add a bit, the things I listed are things I have experienced. I do not mind learning more about new technologies for my projects. challenging new things always makes me excited. In addition, I'm also a founder of [ciser](https://github.com/lamhieu-vk/ciser), a tool that helps shorten the design time of multi-screen interface in the programming 😆"
           }
         ]
       }
@@ -250,8 +248,7 @@ export const sections = {
         by: 'guest',
         content: [
           {
-            markdown:
-              'ngoài những thứ kể trên, bạn còn có gì cho tôi biết thêm không?'
+            markdown: 'in addition to the above, what else can you tell me?'
           }
         ]
       },
@@ -259,33 +256,33 @@ export const sections = {
         by: 'author',
         content: [
           {
-            markdown: 'à, tôi còn có vài kỹ năng mềm cơ bản nữa ấy... 😅'
+            markdown: 'ahh, I have some basic soft skills too... 😅'
           },
           {
             progress: {
               items: [
                 {
-                  name: 'giao tiếp',
+                  name: 'communication',
                   value: 85
                 },
                 {
-                  name: 'sáng tạo',
+                  name: 'creation',
                   value: 90
                 },
                 {
-                  name: 'tư duy phản biện',
+                  name: 'critical thinking',
                   value: 75
                 },
                 {
-                  name: 'tinh thần học hỏi',
+                  name: 'learning spirit',
                   value: 85
                 },
                 {
-                  name: 'kỹ năng phân tích',
+                  name: 'analytical skills',
                   value: 80
                 },
                 {
-                  name: 'làm việc nhóm',
+                  name: 'teamwork',
                   value: 77.5
                 }
               ]
@@ -305,7 +302,7 @@ export const sections = {
         content: [
           {
             markdown:
-              'cơ mà hình như bạn chưa nói về việc học của mình thì phải? 🤔'
+              "it seems like you haven't talked about you studied yet? 🤔"
           }
         ]
       },
@@ -314,13 +311,13 @@ export const sections = {
         content: [
           {
             markdown:
-              'thật ra thì việc học của tôi cũng chẳng có gì đặt biệt cả và nó thế này...'
+              "actually, my learning was also nothing special at all and it's like this ..."
           },
           {
             timeline: [
               {
-                title: 'tốt nghiệp trung học',
-                subtitle: 'trường thpt gành hào',
+                title: 'high school graduate',
+                subtitle: 'Ganh Hao high school',
                 date: '🤷‍♂️ - 07/2017'
               }
             ]
@@ -338,7 +335,7 @@ export const sections = {
         by: 'guest',
         content: [
           {
-            markdown: 'thế còn công việc của bạn thì sao?'
+            markdown: "so what's about your work?"
           }
         ]
       },
@@ -347,16 +344,16 @@ export const sections = {
         content: [
           {
             markdown:
-              'sau khi học xong trung học, tôi quyết định tạm dừng con đường học tập mà đi theo đuổi đam mê ngay lúc đó... đến tận hôm nay luôn ạ 🤓'
+              'when I graduated from high school, I decided to stop my studies and pursure my passion... until now 🤓'
           },
           {
             timeline: [
               {
-                title: 'người sáng lập & phát triển',
+                title: 'founder',
                 subtitle: 'giccos',
                 date: '03/2015 - 10/2016',
                 description:
-                  'đây là dự án phát triển mã nguồn mạng xã hội được thực hiện bởi cá nhân tôi nhầm phân tích, tìm hiểu cách thức hoạt động của hệ thống lớn, phục vụ như người người dùng với số lượng truy cập cao, đảm bảo tính ổn định và trãi nghiệm người dùng tốt nhất. đây là dự án cá nhân trong lúc tôi còn là một học sinh cấp ba, nó mở ra cho tôi một cách nhìn mới về lập trình hướng đối tượng'
+                  'this is a social network development project that is implemented by me personally to analyze, learn how the system works, serve as user with high traffic, ensure stability. and best user experience. this is a personal project while I was a high school student, it opened up to me a new perspective on object-oriented programming'
               }
             ],
             progress: {
@@ -379,11 +376,11 @@ export const sections = {
           {
             timeline: [
               {
-                title: 'lập trình viên',
+                title: 'developer',
                 subtitle: 'connected jsc',
                 date: '07/2017 - 02/2018',
                 description:
-                  'tại môi trường làm việc nơi đây tôi được học hỏi thêm rất nhiều về mặt kiến thức lẫn khả năng tư duy phân tích vấn đề. chúng tôi (tôi + 1) cùng nhau làm việc hơn 20 dự án lớn nhỏ khác nhau, chúng tôi phát triển công cụ giúp đơn giản hóa việc phát triển một website nhưng vẫn tối ưu hóa những tính năng và hiệu năng cần thiết'
+                  'in my work environment I learned a lot in terms of knowledge and ability to think and analyze problems. we (me + 1) work together on over 20 different large and small projects. we develop tools to simplify the development of a website but still optimize the features and performance required'
               }
             ],
             progress: {
@@ -401,7 +398,7 @@ export const sections = {
           },
           {
             markdown:
-              'hiện tại tôi đang nghiên cứu và trao dồi thêm kinh nghiệm làm việc của mình, nếu bạn muốn hợp tác với tôi thì có thể liên lạc với tôi theo thông tin cuối trang 🤙 và thật tuyệt vời nếu được học hỏi thêm những điều thú vị từ bạn 👏'
+              "currently, I am researching and cultivating my work experience, if you are interested, please contact me 🤙. it's great to learn something new from you 👏"
           }
         ]
       }
@@ -416,7 +413,7 @@ export const sections = {
         by: 'guest',
         content: [
           {
-            markdown: 'tôi có thể liên lạc với bạn bằng cách nào? 🤔'
+            markdown: 'how can I contact you? 🤔'
           }
         ]
       },
@@ -424,10 +421,10 @@ export const sections = {
         by: 'author',
         content: [
           {
-            markdown: 'à vâng 😶 đây là thông tin liên lạc của tôi...'
+            markdown: "well 😶 ! this's my contact imformation..."
           },
           {
-            markdown: '### thông tin liên lạc',
+            markdown: '### contact',
             contact: [
               {
                 icon: 'home',
@@ -474,7 +471,7 @@ export const sections = {
             ]
           },
           {
-            markdown: 'liên lạc với tôi khi bạn cần sự giúp đỡ 👍'
+            markdown: 'contact me when you need help 👍'
           }
         ]
       },
@@ -482,7 +479,7 @@ export const sections = {
         by: 'guest',
         content: [
           {
-            markdown: 'à vâng, tôi sẽ liên lạc với bạn sớm thôi...'
+            markdown: 'yeah, I will contact you soon...'
           }
         ]
       },
@@ -490,18 +487,19 @@ export const sections = {
         by: 'author',
         content: [
           {
-            markdown: 'ohh yeah, cảm ơn vì đã ghé thăm nhà tôi 😆'
+            markdown: 'ohh yeah, thanks for watching 😆'
           },
           {
-            note: 'giao diện bởi [ciser](https://github.com/lamhieu-vk/ciser), thiết kế bởi Lâm Hiếu',
+            note:
+              'style with [ciser](https://github.com/lamhieu-vk/ciser), desgined by Lam Hieu'
           },
           {
             switchLanguge: {
-              text: 'xem ở ngôn ngữ khác',
+              text: 'view at other languages',
               items: [
                 {
                   href: '/',
-                  label: 'tiếng việt',
+                  label: 'vietnamese'
                 }
               ]
             }

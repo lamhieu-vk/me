@@ -13,7 +13,7 @@ const defaultTheme = {
     'box h1s-ns h1 w1s-ns w1 ba bw1 b--white br-100 t-all-ease a-zoom-in-out a-s t-all-ease t-f',
   list: 'flex flex-wrap max-w-60-ns max-w-75',
   message:
-    'box mv1s-ns mv1 w-auto pa3 bg-white br3 f5-ns f6 fw3 gray t-all-ease t-f',
+    'box ma1s-ns ma1 w-auto pa3 bg-white br3 f5-ns f6 fw3 gray t-all-ease t-f',
   lineAuthor: 'justify-start mv3-ns mv2 w-100',
   avatarAuthor: 'bg-blue mr2',
   listAuthor: '',
