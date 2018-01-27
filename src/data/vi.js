@@ -6,21 +6,22 @@ import favicon16x16 from '../images/favicon-16x16.png'
 
 export const meta = {
   website: 'https://lamhieu.info',
-  lang: 'vietnamese',
+  lang: 'vi',
   title: 'lamhieu - yep, never give up.',
   keywords:
     'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
-  image: [
-    imageCover01,
-    imageCover02,
-    imageCover03,
-  ],
+  image: [imageCover01, imageCover02, imageCover03],
   description:
     'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất',
   favicon: {
     '16x16': favicon16x16,
     '32x32': favicon32x32
   }
+}
+
+export const header = {
+  name: 'Lâm Hiếu',
+  text: 'lập trình viên'
 }
 
 export const socialMedia = {
@@ -493,7 +494,8 @@ export const sections = {
             markdown: 'ohh yeah, cảm ơn vì đã ghé thăm nhà tôi 😆'
           },
           {
-            note: 'giao diện bởi [ciser](https://github.com/lamhieu-vk/ciser), thiết kế bởi Lâm Hiếu',
+            note:
+              'giao diện bởi [ciser](https://github.com/lamhieu-vk/ciser), thiết kế bởi Lâm Hiếu'
           },
           {
             switchLanguge: {
@@ -501,7 +503,7 @@ export const sections = {
               items: [
                 {
                   href: '/en',
-                  label: 'tiếng anh',
+                  label: 'tiếng anh'
                 }
               ]
             }

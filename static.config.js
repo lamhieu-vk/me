@@ -9,19 +9,19 @@ const gtagScript = `
   gtag('config', 'UA-108475565-1');
 `
 
-const deferredStylesScript = `
-  var loadDeferredStyles = function() {
-    var addStylesNode = document.getElementById("deferred-styles");
-    var replacement = document.createElement("div");
-    replacement.innerHTML = addStylesNode.textContent;
-    document.body.appendChild(replacement)
-    addStylesNode.parentElement.removeChild(addStylesNode);
-  };
-  var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-      window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-  if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-  else window.addEventListener('load', loadDeferredStyles);
-`
+// const deferredStylesScript = `
+//   var loadDeferredStyles = function() {
+//     var addStylesNode = document.getElementById("deferred-styles");
+//     var replacement = document.createElement("div");
+//     replacement.innerHTML = addStylesNode.textContent;
+//     document.body.appendChild(replacement)
+//     addStylesNode.parentElement.removeChild(addStylesNode);
+//   };
+//   var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+//       window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+//   if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+//   else window.addEventListener('load', loadDeferredStyles);
+// `
 
 export default {
   getSiteProps: () => ({
@@ -48,10 +48,15 @@ export default {
     devDist: 'dist', // The development scratch directory.
     public: 'public' // The public directory (files copied to dist during build)
   },
-  Document: ({ Html, Head, Body, children }) => (
+  Document: ({ Html, Head, Body, children }: any) => (
     <Html lang="vi-VN">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css"
+          rel="stylesheet"
+        />
+        <link href="https://unpkg.com/ciser/build/ciser.css" rel="stylesheet" />
         <link
           href="https://fonts.googleapis.com/css?family=Roboto:100,300,400"
           rel="stylesheet"
@@ -60,20 +65,13 @@ export default {
           href="https://fonts.googleapis.com/css?family=Roboto+Slab:300"
           rel="stylesheet"
         />
-        <link
-          href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css"
-          rel="stylesheet"
-        />
-        <link href="https://unpkg.com/ciser/build/ciser.css" rel="stylesheet" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-108475565-1"
         />
         <script dangerouslySetInnerHTML={{ __html: gtagScript }} />
       </Head>
-      <Body>
-        {children}
-      </Body>
+      <Body>{children}</Body>
     </Html>
   )
 }

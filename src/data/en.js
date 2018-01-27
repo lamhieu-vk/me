@@ -6,7 +6,7 @@ import favicon16x16 from '../images/favicon-16x16.png'
 
 export const meta = {
   website: 'https://lamhieu.info',
-  lang: 'vietnamese',
+  lang: 'en',
   title: 'lamhieu - yep, never give up.',
   keywords:
     'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
@@ -17,6 +17,11 @@ export const meta = {
     '16x16': favicon16x16,
     '32x32': favicon32x32
   }
+}
+
+export const header = {
+  name: 'Lam Hieu',
+  text: ' a developer'
 }
 
 export const socialMedia = {
