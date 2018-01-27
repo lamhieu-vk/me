@@ -212,7 +212,10 @@ var Home = function (_PureComponent) {
           {
             className: 'relative aspect-ratio--16x9-ns aspect-ratio--4x3 bg-center cover',
             image: '//res.cloudinary.com/lh-imagecloud/image/upload/v1515930477/Mesh-Triangles-Surface-Colorful-Angular-WallpapersByte-com-3840x2400_kfsxmi.jpg',
-            overlayColor: ['rgba(246, 249, 252, .75)', 'rgba(246, 249, 252, 1)']
+            overlayColor: ['rgba(246, 249, 252, .75)', 'rgba(246, 249, 252, 1)'],
+            size: {
+              width: 720
+            }
           },
           _react2.default.createElement(
             'div',
@@ -222,7 +225,10 @@ var Home = function (_PureComponent) {
               { className: 'box a-wobble mb4-ns mb3 w4-ns w3 ba bw2-ns bw1 b--white overflow-hidden br-100 t-all-ease' },
               _react2.default.createElement(_Background2.default, {
                 className: 'w-100 aspect-ratio--1x1 bg-center cover br-100',
-                image: '//res.cloudinary.com/lh-imagecloud/image/upload/v1509441836/me.1114e9a3_igwxff.jpg'
+                image: '//res.cloudinary.com/lh-imagecloud/image/upload/v1509441836/me.1114e9a3_igwxff.jpg',
+                size: {
+                  width: 250
+                }
               })
             ),
             _react2.default.createElement(
@@ -2276,4 +2282,4 @@ var sections = exports.sections = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.6e133345.js.map
+//# sourceMappingURL=app.static.965aa490.js.map
