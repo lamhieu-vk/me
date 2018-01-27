@@ -241,7 +241,7 @@ var Home = function (_PureComponent) {
               ),
               _react2.default.createElement(
                 'span',
-                { className: 'dib ml2 fw1 gray a-slide-to-left' },
+                { className: 'dib ml2-ns ml1s fw1 gray a-slide-to-left' },
                 header && header.text
               )
             ),
@@ -2282,4 +2282,4 @@ var sections = exports.sections = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.965aa490.js.map
+//# sourceMappingURL=app.static.703c374b.js.map
