@@ -193,7 +193,8 @@ var Home = function (_PureComponent) {
     value: function render() {
       var _props$data = this.props.data;
       _props$data = _props$data === undefined ? {} : _props$data;
-      var meta = _props$data.meta,
+      var header = _props$data.header,
+          meta = _props$data.meta,
           sections = _props$data.sections,
           socialMedia = _props$data.socialMedia;
 
@@ -230,12 +231,12 @@ var Home = function (_PureComponent) {
               _react2.default.createElement(
                 'span',
                 { className: 'dib fw3 dark-gray a-slide-to-right' },
-                'Lam Hieu'
+                header && header.name
               ),
               _react2.default.createElement(
                 'span',
-                { className: 'dib fw1 gray a-slide-to-left' },
-                '\'s a developer'
+                { className: 'dib ml2 fw1 gray a-slide-to-left' },
+                header && header.text
               )
             ),
             _react2.default.createElement(
@@ -246,7 +247,7 @@ var Home = function (_PureComponent) {
                   'a',
                   {
                     key: k,
-                    className: (0, _classnames2.default)(i % 2 === 0 ? 'a-slide-to-top' : 'a-slide-to-bottom', 'box flex items-center justify-center mh2-ns mh1s shadow-l-2 bg-white br-100 h2s-ns h2 w2s-ns w2 f3-ns f4 gray hover-dark-gray t-all-ease no-underline'),
+                    className: (0, _classnames2.default)(i % 2 === 0 ? 'a-slide-to-top' : 'a-slide-to-bottom', 'grow flex items-center justify-center mh2-ns mh1s shadow-l-2 bg-white br-100 h2s-ns h2 w2s-ns w2 f3-ns f4 gray hover-dark-gray t-all-ease t-f no-underline'),
                     href: socialMedia[k]
                   },
                   _react2.default.createElement(_Icon2.default, { name: k })
@@ -964,7 +965,7 @@ var defaultTheme = {
   line: 'pv1 flex flex-wrap items-end',
   avatar: 'box h1s-ns h1 w1s-ns w1 ba bw1 b--white br-100 t-all-ease a-zoom-in-out a-s t-all-ease t-f',
   list: 'flex flex-wrap max-w-60-ns max-w-75',
-  message: 'box ma1s-ns ma1 w-auto pa3 bg-white br3 f5-ns f6 fw3 gray t-all-ease t-f',
+  message: 'grow ma1s-ns ma1 w-auto pa3 shadow-t-2s bg-white br3 f5-ns f6 fw3 gray t-all-ease t-f',
   lineAuthor: 'justify-start mv3-ns mv2 w-100',
   avatarAuthor: 'bg-blue mr2',
   listAuthor: '',
@@ -1453,7 +1454,7 @@ module.exports = require("react-helmet");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sections = exports.socialMedia = exports.meta = undefined;
+exports.sections = exports.socialMedia = exports.header = exports.meta = undefined;
 
 var _cover = __webpack_require__(5);
 
@@ -1479,7 +1480,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var meta = exports.meta = {
   website: 'https://lamhieu.info',
-  lang: 'vietnamese',
+  lang: 'vi',
   title: 'lamhieu - yep, never give up.',
   keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: [_cover2.default, _cover4.default, _cover6.default],
@@ -1488,6 +1489,11 @@ var meta = exports.meta = {
     '16x16': _favicon16x2.default,
     '32x32': _favicon32x2.default
   }
+};
+
+var header = exports.header = {
+  name: 'Lâm Hiếu',
+  text: 'lập trình viên'
 };
 
 var socialMedia = exports.socialMedia = {
@@ -1875,7 +1881,7 @@ exports.default = Home;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sections = exports.socialMedia = exports.meta = undefined;
+exports.sections = exports.socialMedia = exports.header = exports.meta = undefined;
 
 var _cover = __webpack_require__(5);
 
@@ -1901,7 +1907,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var meta = exports.meta = {
   website: 'https://lamhieu.info',
-  lang: 'vietnamese',
+  lang: 'en',
   title: 'lamhieu - yep, never give up.',
   keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: [_cover2.default, _cover4.default, _cover6.default],
@@ -1910,6 +1916,11 @@ var meta = exports.meta = {
     '16x16': _favicon16x2.default,
     '32x32': _favicon32x2.default
   }
+};
+
+var header = exports.header = {
+  name: 'Lam Hieu',
+  text: ' a developer'
 };
 
 var socialMedia = exports.socialMedia = {
@@ -2265,4 +2276,4 @@ var sections = exports.sections = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.49fbb587.js.map
+//# sourceMappingURL=app.static.6e133345.js.map
