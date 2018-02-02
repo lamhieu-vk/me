@@ -471,6 +471,12 @@ export const sections = {
                 href: 'skype:lamhieu@outlook.com?call',
                 label: 'skype',
                 value: 'lamhieu@outlook.com'
+              },
+              {
+                icon: 'flickr',
+                href: 'https://flic.kr/ps/31jJWn',
+                label: 'flickr',
+                value: 'flickr/lamhieu'
               }
             ]
           },

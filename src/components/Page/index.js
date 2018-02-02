@@ -42,7 +42,7 @@ class Home extends PureComponent<any, any> {
               <span className="dib fw3 dark-gray a-slide-to-right">
                 {header && header.name}
               </span>
-              <span className="dib ml2 fw1 gray a-slide-to-left">
+              <span className="dib ml2-ns ml1s fw1 gray a-slide-to-left">
                 {header && header.text}
               </span>
             </div>
