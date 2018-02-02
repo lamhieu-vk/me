@@ -1816,6 +1816,11 @@ var sections = exports.sections = {
           href: 'skype:lamhieu@outlook.com?call',
           label: 'skype',
           value: 'lamhieu@outlook.com'
+        }, {
+          icon: 'flickr',
+          href: 'https://flic.kr/ps/31jJWn',
+          label: 'flickr',
+          value: 'flickr/lamhieu'
         }]
       }, {
         markdown: 'liên lạc với tôi khi bạn cần sự giúp đỡ 👍'
@@ -2245,6 +2250,11 @@ var sections = exports.sections = {
           href: 'skype:lamhieu@outlook.com?call',
           label: 'skype',
           value: 'lamhieu@outlook.com'
+        }, {
+          icon: 'flickr',
+          href: 'https://flic.kr/ps/31jJWn',
+          label: 'flickr',
+          value: 'flickr/lamhieu'
         }]
       }, {
         markdown: 'contact me when you need help 👍'
@@ -2282,4 +2292,4 @@ var sections = exports.sections = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.703c374b.js.map
+//# sourceMappingURL=app.static.ba6e62dd.js.map
