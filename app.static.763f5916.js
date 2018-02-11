@@ -233,15 +233,15 @@ var Home = function (_PureComponent) {
             ),
             _react2.default.createElement(
               'div',
-              { className: 'f2-ns f3' },
+              { className: 'f2-ns f3 a-zoom-out' },
               _react2.default.createElement(
                 'span',
-                { className: 'dib fw3 dark-gray a-slide-to-right' },
+                { className: 'dib fw3 dark-gray' },
                 header && header.name
               ),
               _react2.default.createElement(
                 'span',
-                { className: 'dib ml2-ns ml1s fw1 gray a-slide-to-left' },
+                { className: 'dib ml2-ns ml1s fw1 gray' },
                 header && header.text
               )
             ),
@@ -1488,7 +1488,7 @@ var meta = exports.meta = {
   website: 'https://lamhieu.info',
   lang: 'vi',
   title: 'lamhieu - yep, never give up.',
-  keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
+  keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, liser, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: [_cover2.default, _cover4.default, _cover6.default],
   description: 'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất',
   favicon: {
@@ -1649,7 +1649,7 @@ var sections = exports.sections = {
           }]
         }
       }, {
-        markdown: 'nói thêm một chút, những thứ tôi liệt kê là những thứ đã làm qua và tôi không ngại nếu được học hỏi thêm về những công nghệ mới nếu các dự án của tôi thực hiện cần đến nó, học hỏi thêm những thứ mới là một trong những điều tuyệt vời ấy mà tôi thích 🤩. ngoài ra, tôi còn là người lập kiêm hỗ trợ của [ciser](https://github.com/lamhieu-vk/ciser), một công cụ giúp rút ngắn thời gian thiết kế giao diện đa màn hình trong lập trình, một công cụ rất hữu ít nếu bạn sử dụng 😆'
+        markdown: 'nói thêm một chút, những thứ tôi liệt kê là những thứ đã làm qua và tôi không ngại nếu được học hỏi thêm về những công nghệ mới nếu các dự án của tôi thực hiện cần đến nó, học hỏi thêm những thứ mới là một trong những điều tuyệt vời ấy mà tôi thích 🤩. ngoài ra, tôi còn là người lập kiêm hỗ trợ của [ciser](https://www.npmjs.com/package/ciser), một công cụ giúp rút ngắn thời gian thiết kế giao diện đa màn hình trong lập trình, một công cụ rất hữu ít nếu bạn sử dụng 😆. và một đứa nhóc nữa cũng được mình tạo ra là [liser](https://www.npmjs.com/package/liser), đây là một bộ dịch (cli) nhưng cũng chứa trong đó nhiều css utility, bạn có thể sử dụng nó để tạo ra một file css library cho riêng bạn 👍'
       }]
     }]
   },
@@ -1835,7 +1835,7 @@ var sections = exports.sections = {
       content: [{
         markdown: 'ohh yeah, cảm ơn vì đã ghé thăm nhà tôi 😆'
       }, {
-        note: 'giao diện bởi [ciser](https://github.com/lamhieu-vk/ciser), thiết kế bởi Lâm Hiếu'
+        note: 'giao diện bởi [liser](https://www.npmjs.com/package/liser), thiết kế bởi Lâm Hiếu'
       }, {
         switchLanguge: {
           text: 'xem ở ngôn ngữ khác',
@@ -1920,7 +1920,7 @@ var meta = exports.meta = {
   website: 'https://lamhieu.info',
   lang: 'en',
   title: 'lamhieu - yep, never give up.',
-  keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
+  keywords: 'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, liser, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: [_cover2.default, _cover4.default, _cover6.default],
   description: "I'm a programmer, I love my job. I always want to bring people with useful products with the best quality",
   favicon: {
@@ -2083,7 +2083,7 @@ var sections = exports.sections = {
           }]
         }
       }, {
-        markdown: "to talk add a bit, the things I listed are things I have experienced. I do not mind learning more about new technologies for my projects. challenging new things always makes me excited. In addition, I'm also a founder of [ciser](https://github.com/lamhieu-vk/ciser), a tool that helps shorten the design time of multi-screen interface in the programming 😆"
+        markdown: "to talk add a bit, the things I listed are things I have experienced. I do not mind learning more about new technologies for my projects. challenging new things always makes me excited. In addition, I'm also a founder of [ciser](https://github.com/lamhieu-vk/ciser), a tool that helps shorten the design time of multi-screen interface in the programming 😆. and another kid I created was [liser](https://www.npmjs.com/package/liser), which is a cli but also contains many css utilities, you can use it to create your own css library file 👍"
       }]
     }]
   },
@@ -2269,7 +2269,7 @@ var sections = exports.sections = {
       content: [{
         markdown: 'ohh yeah, thanks for watching 😆'
       }, {
-        note: 'style with [ciser](https://github.com/lamhieu-vk/ciser), desgined by Lam Hieu'
+        note: 'style with [liser](https://www.npmjs.com/package/liser), desgined by Lam Hieu'
       }, {
         switchLanguge: {
           text: 'view at other languages',
@@ -2292,4 +2292,4 @@ var sections = exports.sections = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.ba6e62dd.js.map
+//# sourceMappingURL=app.static.763f5916.js.map
