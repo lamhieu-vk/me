@@ -9,7 +9,7 @@ export const meta = {
   lang: 'en',
   title: 'lamhieu - yep, never give up.',
   keywords:
-    'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
+    'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, liser, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: [imageCover01, imageCover02, imageCover03],
   description:
     "I'm a programmer, I love my job. I always want to bring people with useful products with the best quality",
@@ -238,7 +238,7 @@ export const sections = {
           },
           {
             markdown:
-              "to talk add a bit, the things I listed are things I have experienced. I do not mind learning more about new technologies for my projects. challenging new things always makes me excited. In addition, I'm also a founder of [ciser](https://github.com/lamhieu-vk/ciser), a tool that helps shorten the design time of multi-screen interface in the programming 😆"
+              "to talk add a bit, the things I listed are things I have experienced. I do not mind learning more about new technologies for my projects. challenging new things always makes me excited. In addition, I'm also a founder of [ciser](https://github.com/lamhieu-vk/ciser), a tool that helps shorten the design time of multi-screen interface in the programming 😆. and another kid I created was [liser](https://www.npmjs.com/package/liser), which is a cli but also contains many css utilities, you can use it to create your own css library file 👍"
           }
         ]
       }
@@ -502,7 +502,7 @@ export const sections = {
           },
           {
             note:
-              'style with [ciser](https://github.com/lamhieu-vk/ciser), desgined by Lam Hieu'
+              'style with [liser](https://www.npmjs.com/package/liser), desgined by Lam Hieu'
           },
           {
             switchLanguge: {

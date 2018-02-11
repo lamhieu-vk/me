@@ -9,7 +9,7 @@ export const meta = {
   lang: 'vi',
   title: 'lamhieu - yep, never give up.',
   keywords:
-    'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
+    'lamhieu, lamhieu-vk, _lamhieu, never give up, html, css, liser, ciser, nodejs, react, php, mysql, javascript, es6, mongodb, developer, designer, lap trinh vien, lập trình viên, lam hieu, lâm hiếu',
   image: [imageCover01, imageCover02, imageCover03],
   description:
     'tôi là một lập trình viên, tôi yêu công việc của mình. tôi luôn mong muốn mang đến cho mọi người những sản phẩm hữu ích với chất lượng tốt nhất',
@@ -236,7 +236,7 @@ export const sections = {
           },
           {
             markdown:
-              'nói thêm một chút, những thứ tôi liệt kê là những thứ đã làm qua và tôi không ngại nếu được học hỏi thêm về những công nghệ mới nếu các dự án của tôi thực hiện cần đến nó, học hỏi thêm những thứ mới là một trong những điều tuyệt vời ấy mà tôi thích 🤩. ngoài ra, tôi còn là người lập kiêm hỗ trợ của [ciser](https://github.com/lamhieu-vk/ciser), một công cụ giúp rút ngắn thời gian thiết kế giao diện đa màn hình trong lập trình, một công cụ rất hữu ít nếu bạn sử dụng 😆'
+              'nói thêm một chút, những thứ tôi liệt kê là những thứ đã làm qua và tôi không ngại nếu được học hỏi thêm về những công nghệ mới nếu các dự án của tôi thực hiện cần đến nó, học hỏi thêm những thứ mới là một trong những điều tuyệt vời ấy mà tôi thích 🤩. ngoài ra, tôi còn là người lập kiêm hỗ trợ của [ciser](https://www.npmjs.com/package/ciser), một công cụ giúp rút ngắn thời gian thiết kế giao diện đa màn hình trong lập trình, một công cụ rất hữu ít nếu bạn sử dụng 😆. và một đứa nhóc nữa cũng được mình tạo ra là [liser](https://www.npmjs.com/package/liser), đây là một bộ dịch (cli) nhưng cũng chứa trong đó nhiều css utility, bạn có thể sử dụng nó để tạo ra một file css library cho riêng bạn 👍'
           }
         ]
       }
@@ -501,7 +501,7 @@ export const sections = {
           },
           {
             note:
-              'giao diện bởi [ciser](https://github.com/lamhieu-vk/ciser), thiết kế bởi Lâm Hiếu'
+              'giao diện bởi [liser](https://www.npmjs.com/package/liser), thiết kế bởi Lâm Hiếu'
           },
           {
             switchLanguge: {
