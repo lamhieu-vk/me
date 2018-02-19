@@ -77,6 +77,14 @@ export const sections = {
           {
             markdown:
               'vì lập trình với tôi là đam mê nên có lẻ tôi rất khó có thể sống nếu thiếu nó 😙'
+          },
+          {
+            markdown:
+              'tôi rất không thích việc người khác đánh giá con người hay trình độ qua nhưng tấm bằng cấp, nó hoàn toàn vô nghĩa với tôi, ít nhất là ở thời điểm hiện tại 🤧 !'
+          },
+          {
+            markdown:
+              'nếu một ai đó có thể lấy mặt trăng đưa cho bạn thì tôi cũng có thể làm điều tương tự. hãy cho tôi một cơ hội, tôi sẽ cho bạn thấy những gì tôi có thể làm được... 🤝'
           }
         ]
       },
@@ -403,6 +411,10 @@ export const sections = {
           {
             markdown:
               'hiện tại tôi đang nghiên cứu và trao dồi thêm kinh nghiệm làm việc của mình, nếu bạn muốn hợp tác với tôi thì có thể liên lạc với tôi theo thông tin cuối trang 🤙 và thật tuyệt vời nếu được học hỏi thêm những điều thú vị từ bạn 👏'
+          },
+          {
+            markdown:
+              'hoặc nếu tôi phù hợp với vị trí nào đó doanh nghiệp bạn đang tìm kiếm, hãy liên lạc cho tôi 😙 rất sẵn lòng được hợp tác với mọi người 🤓'
           }
         ]
       }

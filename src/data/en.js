@@ -77,6 +77,14 @@ export const sections = {
           {
             markdown:
               'programming is my passion. so my life will be boring without it 😙'
+          },
+          {
+            markdown:
+              "I don't like people judging people or qualifications through degrees, it's completely pointless to me, at least for now 🤧 !"
+          },
+          {
+            markdown:
+              'if someone could take the moon for you, I could do the same. give me a chance, I will show you what I can do ... 🤝'
           }
         ]
       },
@@ -404,6 +412,10 @@ export const sections = {
           {
             markdown:
               "currently, I am researching and cultivating my work experience, if you are interested, please contact me 🤙. it's great to learn something new from you 👏"
+          },
+          {
+            markdown:
+              'or if I fit a certain business location you are looking for, please contact me 😙 very happy to cooperate with people 🤓'
           }
         ]
       }
