@@ -1538,6 +1538,10 @@ var sections = exports.sections = {
         markdown: 'tôi mang trong mình niềm đam mê về lập trình rất lớn, no dường như đã thấm sâu vào cơ thể tôi ngay từ những ngày tôi biết đến nó, cơ duyên tôi tìm đến lập trình 💻 là một ngày rất tình cờ khi tôi còn là một học sinh tiểu học 👨‍🎓, dần dần thì tôi biết nó là đam mê của đời tôi 👨‍💻'
       }, {
         markdown: 'vì lập trình với tôi là đam mê nên có lẻ tôi rất khó có thể sống nếu thiếu nó 😙'
+      }, {
+        markdown: 'tôi rất không thích việc người khác đánh giá con người hay trình độ qua nhưng tấm bằng cấp, nó hoàn toàn vô nghĩa với tôi, ít nhất là ở thời điểm hiện tại 🤧 !'
+      }, {
+        markdown: 'nếu một ai đó có thể lấy mặt trăng đưa cho bạn thì tôi cũng có thể làm điều tương tự. hãy cho tôi một cơ hội, tôi sẽ cho bạn thấy những gì tôi có thể làm được... 🤝'
       }]
     }, {
       by: 'guest',
@@ -1763,6 +1767,8 @@ var sections = exports.sections = {
         }
       }, {
         markdown: 'hiện tại tôi đang nghiên cứu và trao dồi thêm kinh nghiệm làm việc của mình, nếu bạn muốn hợp tác với tôi thì có thể liên lạc với tôi theo thông tin cuối trang 🤙 và thật tuyệt vời nếu được học hỏi thêm những điều thú vị từ bạn 👏'
+      }, {
+        markdown: 'hoặc nếu tôi phù hợp với vị trí nào đó doanh nghiệp bạn đang tìm kiếm, hãy liên lạc cho tôi 😙 rất sẵn lòng được hợp tác với mọi người 🤓'
       }]
     }]
   },
@@ -1970,6 +1976,10 @@ var sections = exports.sections = {
         markdown: 'I have a great passion for programming 💻. It seemed to have panetrated my mind when i knew it. my opportunity to programer was a coincidental day when I learned  elementary. Gradually 🎓, I knew it and I realized that it was my passion 👨‍💻'
       }, {
         markdown: 'programming is my passion. so my life will be boring without it 😙'
+      }, {
+        markdown: "I don't like people judging people or qualifications through degrees, it's completely pointless to me, at least for now 🤧 !"
+      }, {
+        markdown: 'if someone could take the moon for you, I could do the same. give me a chance, I will show you what I can do ... 🤝'
       }]
     }, {
       by: 'guest',
@@ -2197,6 +2207,8 @@ var sections = exports.sections = {
         }
       }, {
         markdown: "currently, I am researching and cultivating my work experience, if you are interested, please contact me 🤙. it's great to learn something new from you 👏"
+      }, {
+        markdown: 'or if I fit a certain business location you are looking for, please contact me 😙 very happy to cooperate with people 🤓'
       }]
     }]
   },
@@ -2292,4 +2304,4 @@ var sections = exports.sections = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.763f5916.js.map
+//# sourceMappingURL=app.static.953c7349.js.map
