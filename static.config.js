@@ -9,69 +9,81 @@ const gtagScript = `
   gtag('config', 'UA-108475565-1');
 `
 
-// const deferredStylesScript = `
-//   var loadDeferredStyles = function() {
-//     var addStylesNode = document.getElementById("deferred-styles");
-//     var replacement = document.createElement("div");
-//     replacement.innerHTML = addStylesNode.textContent;
-//     document.body.appendChild(replacement)
-//     addStylesNode.parentElement.removeChild(addStylesNode);
-//   };
-//   var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-//       window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-//   if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-//   else window.addEventListener('load', loadDeferredStyles);
-// `
+const data = {
+  dns: [
+    'https://lamhieu.info',
+    'https://maxcdn.icons8.com',
+    'https://unpkg.com',
+    'https://fonts.googleapis.com',
+  ],
+  styles: [
+    'https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css',
+    'https://unpkg.com/liser@stable/build/liser.min.css',
+    'https://fonts.googleapis.com/css?family=Roboto:100,300,400',
+    'https://fonts.googleapis.com/css?family=Roboto+Slab:300',
+  ],
+  scripts: [
+    'https://www.googletagmanager.com/gtag/js?id=UA-108475565-1',
+    gtagScript,
+  ],
+}
+
+const regURL = /^((https|http)(:\/\/))?((([a-zA-Z0-9]+).)?([a-zA-Z0-9]+).([a-zA-Z0-9]+))(\/(\S+))?$/i
+
+const isURL = str => regURL.test(str)
 
 export default {
   getSiteProps: () => ({
-    title: 'lamhieu'
+    title: 'lamhieu',
   }),
   getRoutes: async () => [
     {
       path: '/',
-      component: 'src/containers/Home/Vi'
+      component: 'src/containers/Home/Vi',
     },
     {
       path: '/en',
-      component: 'src/containers/Home/En'
+      component: 'src/containers/Home/En',
     },
     {
       is404: true,
-      component: 'src/containers/Home/Vi'
-    }
+      component: 'src/containers/Home/Vi',
+    },
   ],
   siteRoot: 'https://lamhieu.info',
   paths: {
-    src: 'src', // The source directory. Must include an index.js entry file.
-    dist: 'build', // The production output directory.
-    devDist: 'dist', // The development scratch directory.
-    public: 'public' // The public directory (files copied to dist during build)
+    src: 'src', // the source directory. Must include an index.js entry file.
+    dist: 'build', // the production output directory.
+    devDist: 'dist', // the development scratch directory.
+    public: 'public', // the public directory (files copied to dist during build)
   },
   Document: ({ Html, Head, Body, children }: any) => (
     <Html lang="vi-VN">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css"
-          rel="stylesheet"
-        />
-        <link href="https://unpkg.com/liser@stable/build/liser.min.css" rel="stylesheet" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Roboto:100,300,400"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Roboto+Slab:300"
-          rel="stylesheet"
-        />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-108475565-1"
-        />
-        <script dangerouslySetInnerHTML={{ __html: gtagScript }} />
+        {data.dns
+          .filter(v => isURL(v))
+          .map(v => <link key={v} href={v} rel="dns-prefetch" />)}
+        {data.styles.map(
+          v =>
+            isURL(v) ? (
+              <link key={v} href={v} rel="stylesheet" />
+            ) : (
+              <style key={v} type="text/css">
+                {v}
+              </style>
+            )
+        )}
+        {data.scripts.map(
+          v =>
+            isURL(v) ? (
+              <script key={v} src={v} />
+            ) : (
+              <script key={v} dangerouslySetInnerHTML={{ __html: v }} />
+            )
+        )}
       </Head>
       <Body>{children}</Body>
     </Html>
-  )
+  ),
 }
