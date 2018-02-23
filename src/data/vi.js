@@ -144,6 +144,46 @@ export const sections = {
       }
     ]
   },
+  portfolios: {
+    color: '#7cb342',
+    icon: 'share-alt',
+    title: 'portfolios',
+    messages: [
+      {
+        by: 'author',
+        content: [
+          {
+            markdown:
+              'tôi rất thường hay tham gia các nhóm hoặc diễn đàn về công nghệ để được học hỏi thêm nhiều thứ khác, nó cho tôi một cái nhìn mới mẻ hơn về mọi việc 😄'
+          },
+          {
+            markdown:
+              'à vâng, tôi cũng có tập tành làm vài thứ để đóng góp cho mọi người sử dụng ấy ạ... 😅'
+          },
+          {
+            markdown:
+              '## liser \n bạn có thể tạo mới những mô-đun sau đó kết hợp chúng tạo lên một tệp thư viện các thuộc tính định sẵng hoặc có thể sử dụng thư viện chuẩn có sẵn của [liser](https://github.com/lamhieu-vk/liser). [liser](https://github.com/lamhieu-vk/liser) giúp giảm thời gian thiết kế giao diện một trang web nhưng vẫn đảm bảo được đầy đủ các yếu tố như phù hợp với nhiều loại màn hình và trình duyệt khác nhau. ngoài ra nó còn giúp tạo nhưng hiệu ứng cho trang web một cách dễ dàng hơn! [![liser on npm](https://nodei.co/npm-dl/liser.png)](https://nodei.co/npm/liser/)'
+          },
+          {
+            markdown:
+              '## ciser \n nó được coi như là một bản nâng cấp của tachyons, nó bổ sung thêm các thuộc tính mới và những giá trị trung gian mới cho thư viện này, ngoài ra nó còn được bổ sung thêm các hiệu ứng và nhiều đặc trưng mới khác! [![ciser on npm](https://nodei.co/npm-dl/ciser.png)](https://nodei.co/npm/ciser/)'
+          },
+          {
+            markdown:
+              '## giccos social network \n đây là một bộ mã nguồn mạng xã hội được tôi thực hiện trong quá trình học tập về các ngôn ngữ **php & mysql**, **bash**, **javascript**, **css & html**,... qua việc thực hiện bộ mã nguồn này, tôi học tập được rất nhiều thứ mới, như việc làm thể nào để bảo mật một trang web? làm thế nào để xử lí dữ liệu lớn? cơ sở dữ liệu nên thiết kế thế nào thì tối ưu? lưu dữ dữ liệu người dùng sao cho an toàn và giảm thiếu tối đa dung lượng,... và còn rất rất nhiều thứ khác mà tôi học được trong quá trình thực hiện nó!'
+          },
+          {
+            markdown:
+              '## 10+ website \n tôi đã xây dựng tham gia xây dựng hơn 10+ website do các doanh nghiệp, đối tác phát triển khác nhau trong nhiều lĩnh vực khác nhau!'
+          },
+          {
+            markdown:
+              '## 2+ web builder \n đây là những công cụ để giúp việc phát triển website trở nên dễ dàng hơn, hay nói cách khác thì nó là công cụ để người khác tạo và triển trang một trang web nhanh hơn cách thủ công rất nhiều lần!'
+          },
+        ]
+      }
+    ]
+  },
   experience: {
     color: '#f4511e',
     icon: 'object-ungroup',

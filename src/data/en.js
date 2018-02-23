@@ -147,6 +147,46 @@ export const sections = {
       }
     ]
   },
+  portfolios: {
+    color: '#7cb342',
+    icon: 'share-alt',
+    title: 'portfolios',
+    messages: [
+      {
+        by: 'author',
+        content: [
+          {
+            markdown:
+              'I often go to technology groups or forums to learn more, it gives me a new perspective on things 😄'
+          },
+          {
+            markdown:
+              "ah yep, also have to do some things to contribute to everyone's use ... 😅"
+          },
+          {
+            markdown:
+              '## liser \n you can create new modules and then combine them to create a library of set properties or you can use the existing standard library of [liser](https://github.com/lamhieu-vk/liser). [liser](https://github.com/lamhieu-vk/liser) helps reduce the time spent designing the interface of a web site but still has enough elements such as suitable for different types of monitors and browsers. it also helps to create effects for the site more easily! [![liser on npm](https://nodei.co/npm-dl/liser.png)](https://nodei.co/npm/liser/)'
+          },
+          {
+            markdown:
+              "## ciser \n it's considered as an upgrade from tachyons, which adds new properties and new intermediate values to the library, and adds new effects and features.! [![ciser on npm](https://nodei.co/npm-dl/ciser.png)](https://nodei.co/npm/ciser/)"
+          },
+          {
+            markdown:
+              '## giccos social network \n this is a set of social networking code I made in the learning process of languages such as **php & mysql**, **bash**, **javascript**, **css & html**,... by implementing this code, I learned a lot of new stuff, like how to secure a website? how to handle large data? how should the database design be optimized? safely save data and minimize storage, and so many other things that I learned in the process of doing it!'
+          },
+          {
+            markdown:
+              '## 10+ website \n I have participated in building more than 10+ websites by businesses, partners in different development in different areas!'
+          },
+          {
+            markdown:
+              '## 2+ web builder \n these are tools to make website development easier, in other words, it is the tool for people to create and develop a website faster manually many times.!'
+          }
+        ]
+      }
+    ]
+  },
   experience: {
     color: '#f4511e',
     icon: 'object-ungroup',
