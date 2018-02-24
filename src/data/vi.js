@@ -162,11 +162,11 @@ export const sections = {
           },
           {
             markdown:
-              '## liser \n bạn có thể tạo mới những mô-đun sau đó kết hợp chúng tạo lên một tệp thư viện các thuộc tính định sẵng hoặc có thể sử dụng thư viện chuẩn có sẵn của [liser](https://github.com/lamhieu-vk/liser). [liser](https://github.com/lamhieu-vk/liser) giúp giảm thời gian thiết kế giao diện một trang web nhưng vẫn đảm bảo được đầy đủ các yếu tố như phù hợp với nhiều loại màn hình và trình duyệt khác nhau. ngoài ra nó còn giúp tạo nhưng hiệu ứng cho trang web một cách dễ dàng hơn! [![liser on npm](https://nodei.co/npm-dl/liser.png)](https://nodei.co/npm/liser/)'
+              '## liser  \n[![npm version of liser](https://badge.fury.io/js/liser.svg)](https://npmjs.com/package/liser) [![npm downloads of liser](https://img.shields.io/npm/dm/liser.svg)](https://npmjs.com/package/liser)  \nbạn có thể tạo mới những mô-đun sau đó kết hợp chúng tạo lên một tệp thư viện các thuộc tính định sẵng hoặc có thể sử dụng thư viện chuẩn có sẵn của [liser](https://github.com/lamhieu-vk/liser). [liser](https://github.com/lamhieu-vk/liser) giúp giảm thời gian thiết kế giao diện một trang web nhưng vẫn đảm bảo được đầy đủ các yếu tố như phù hợp với nhiều loại màn hình và trình duyệt khác nhau. ngoài ra nó còn giúp tạo nhưng hiệu ứng cho trang web một cách dễ dàng hơn!'
           },
           {
             markdown:
-              '## ciser \n nó được coi như là một bản nâng cấp của tachyons, nó bổ sung thêm các thuộc tính mới và những giá trị trung gian mới cho thư viện này, ngoài ra nó còn được bổ sung thêm các hiệu ứng và nhiều đặc trưng mới khác! [![ciser on npm](https://nodei.co/npm-dl/ciser.png)](https://nodei.co/npm/ciser/)'
+              '## ciser  \n[![npm version of ciser](https://badge.fury.io/js/ciser.svg)](https://npmjs.com/package/ciser) [![npm downloads of ciser](https://img.shields.io/npm/dm/ciser.svg)](https://npmjs.com/package/ciser)  \nnó được coi như là một bản nâng cấp của tachyons, nó bổ sung thêm các thuộc tính mới và những giá trị trung gian mới cho thư viện này, ngoài ra nó còn được bổ sung thêm các hiệu ứng và nhiều đặc trưng mới khác!'
           },
           {
             markdown:
@@ -179,7 +179,7 @@ export const sections = {
           {
             markdown:
               '## 2+ web builder \n đây là những công cụ để giúp việc phát triển website trở nên dễ dàng hơn, hay nói cách khác thì nó là công cụ để người khác tạo và triển trang một trang web nhanh hơn cách thủ công rất nhiều lần!'
-          },
+          }
         ]
       }
     ]

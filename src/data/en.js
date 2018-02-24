@@ -165,11 +165,11 @@ export const sections = {
           },
           {
             markdown:
-              '## liser \n you can create new modules and then combine them to create a library of set properties or you can use the existing standard library of [liser](https://github.com/lamhieu-vk/liser). [liser](https://github.com/lamhieu-vk/liser) helps reduce the time spent designing the interface of a web site but still has enough elements such as suitable for different types of monitors and browsers. it also helps to create effects for the site more easily! [![liser on npm](https://nodei.co/npm-dl/liser.png)](https://nodei.co/npm/liser/)'
+              '## liser  \n[![npm version of liser](https://badge.fury.io/js/liser.svg)](https://npmjs.com/package/liser) [![npm downloads of liser](https://img.shields.io/npm/dm/liser.svg)](https://npmjs.com/package/liser)  \nyou can create new modules and then combine them to create a library of set properties or you can use the existing standard library of [liser](https://github.com/lamhieu-vk/liser). [liser](https://github.com/lamhieu-vk/liser) helps reduce the time spent designing the interface of a web site but still has enough elements such as suitable for different types of monitors and browsers. it also helps to create effects for the site more easily!'
           },
           {
             markdown:
-              "## ciser \n it's considered as an upgrade from tachyons, which adds new properties and new intermediate values to the library, and adds new effects and features.! [![ciser on npm](https://nodei.co/npm-dl/ciser.png)](https://nodei.co/npm/ciser/)"
+              "## ciser  \n[![npm version of ciser](https://badge.fury.io/js/ciser.svg)](https://npmjs.com/package/ciser) [![npm downloads of ciser](https://img.shields.io/npm/dm/ciser.svg)](https://npmjs.com/package/ciser)  \nit's considered as an upgrade from tachyons, which adds new properties and new intermediate values to the library, and adds new effects and features.!"
           },
           {
             markdown:
