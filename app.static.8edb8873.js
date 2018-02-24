@@ -246,6 +246,16 @@ var Home = function (_PureComponent) {
               )
             ),
             _react2.default.createElement(
+              'h1',
+              { className: 'dn' },
+              meta && meta.title
+            ),
+            _react2.default.createElement(
+              'h2',
+              { className: 'dn' },
+              meta && meta.description
+            ),
+            _react2.default.createElement(
               'div',
               { className: 'mt4-ns mt3 flex flex-wrap items-center justify-center' },
               Object.keys(socialMedia).map(function (k, i) {
@@ -2374,4 +2384,4 @@ var sections = exports.sections = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.8d084fad.js.map
+//# sourceMappingURL=app.static.8edb8873.js.map
