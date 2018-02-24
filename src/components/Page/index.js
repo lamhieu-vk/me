@@ -38,14 +38,14 @@ class Home extends PureComponent<any, any> {
                 }}
               />
             </div>
-            <div className="f2-ns f3 a-zoom-out">
+            <h1 className="f2-ns f3 a-zoom-out">
               <span className="dib fw3 dark-gray">
                 {header && header.name}
               </span>
               <span className="dib ml2-ns ml1s fw1 gray">
                 {header && header.text}
               </span>
-            </div>
+            </h1>
             <div className="mt4-ns mt3 flex flex-wrap items-center justify-center">
               {Object.keys(socialMedia).map((k, i) => (
                 <a

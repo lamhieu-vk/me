@@ -59,14 +59,14 @@ export const TimeLine = ({
   >
     {title && (
       <div className="w-100 bl pl2 bw1 b--light-gray roboto-slab">
-        <span className="fw3 f4-ns f5 dark-gray">{title}</span>
+        <h3 className="fw3 f4-ns f5 dark-gray">{title}</h3>
       </div>
     )}
     {(subtitle || date) && (
       <div className="mt2-ns mt1s flex flex-wrap items-center justify-around">
         {subtitle && (
           <div className="flex-auto-ns w-auto-ns w-100 tl pa1">
-            <span className="fw3 f6 gray ttu">{subtitle}</span>
+            <h4 className="fw3 f6 gray ttu">{subtitle}</h4>
           </div>
         )}
         {date && (
