@@ -46,6 +46,8 @@ class Home extends PureComponent<any, any> {
                 {header && header.text}
               </span>
             </h1>
+            <h1 className="dn">{meta && meta.title}</h1>
+            <h2 className="dn">{meta && meta.description}</h2>
             <div className="mt4-ns mt3 flex flex-wrap items-center justify-center">
               {Object.keys(socialMedia).map((k, i) => (
                 <a
