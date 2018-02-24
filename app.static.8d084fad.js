@@ -232,7 +232,7 @@ var Home = function (_PureComponent) {
               })
             ),
             _react2.default.createElement(
-              'div',
+              'h1',
               { className: 'f2-ns f3 a-zoom-out' },
               _react2.default.createElement(
                 'span',
@@ -1335,7 +1335,7 @@ var TimeLine = function TimeLine(_ref3) {
       'div',
       { className: 'w-100 bl pl2 bw1 b--light-gray roboto-slab' },
       _react2.default.createElement(
-        'span',
+        'h3',
         { className: 'fw3 f4-ns f5 dark-gray' },
         title
       )
@@ -1347,7 +1347,7 @@ var TimeLine = function TimeLine(_ref3) {
         'div',
         { className: 'flex-auto-ns w-auto-ns w-100 tl pa1' },
         _react2.default.createElement(
-          'span',
+          'h4',
           { className: 'fw3 f6 gray ttu' },
           subtitle
         )
@@ -1412,19 +1412,31 @@ var Meta = function Meta(_ref) {
     null,
     links,
     _react2.default.createElement('meta', { key: 'charset', charSet: 'utf-8' }),
-    _react2.default.createElement('meta', { httpEquiv: 'Content-Type', content: 'text/html; charset=utf-8' }),
-    _react2.default.createElement('meta', { name: 'language', content: lang }),
-    _react2.default.createElement('meta', { name: 'author', content: 'Lam Hieu' }),
-    _react2.default.createElement('meta', { name: 'designer', content: 'Lam Hieu' }),
-    _react2.default.createElement('meta', { key: 'keywords', property: 'keywords', content: keywords }),
+    _react2.default.createElement('meta', {
+      key: 'content-type',
+      ttpEquiv: 'Content-Type',
+      content: 'text/html; charset=utf-8'
+    }),
+    _react2.default.createElement('meta', { key: 'language', name: 'language', content: lang }),
+    _react2.default.createElement('meta', { key: 'author', name: 'author', content: 'Lam Hieu' }),
+    _react2.default.createElement('meta', { key: 'designer', name: 'designer', content: 'Lam Hieu' }),
+    _react2.default.createElement('meta', { key: 'keywords', name: 'keywords', content: keywords }),
     _react2.default.createElement('meta', { key: 'image', itemProp: 'image', content: img }),
     _react2.default.createElement('meta', { key: 'description', itemProp: 'description', content: description }),
     _react2.default.createElement('meta', { key: 'name', itemProp: 'name', content: title }),
     _react2.default.createElement('meta', { key: 'twitter:image', name: 'twitter:image', content: img }),
-    _react2.default.createElement('meta', { key: 'twitter:description', name: 'twitter:description', content: description }),
+    _react2.default.createElement('meta', {
+      key: 'twitter:description',
+      name: 'twitter:description',
+      content: description
+    }),
     _react2.default.createElement('meta', { key: 'twitter:title', name: 'twitter:title', content: title }),
     _react2.default.createElement('meta', { key: 'twitter:card', name: 'twitter:card', content: 'summary' }),
-    _react2.default.createElement('meta', { key: 'og:description', property: 'og:description', content: description }),
+    _react2.default.createElement('meta', {
+      key: 'og:description',
+      property: 'og:description',
+      content: description
+    }),
     _react2.default.createElement('meta', { key: 'og:image', property: 'og:image', content: img }),
     _react2.default.createElement('meta', { key: 'og:title', property: 'og:title', content: title }),
     _react2.default.createElement('meta', { key: 'og:type', property: 'og:type', content: 'website' }),
@@ -1432,8 +1444,20 @@ var Meta = function Meta(_ref) {
     _react2.default.createElement('meta', { key: 'robots', name: 'robots', content: 'all,index,follow' }),
     _react2.default.createElement('meta', { key: 'subject', name: 'subject' }),
     _react2.default.createElement('meta', { key: 'description', name: 'description', content: description }),
-    _react2.default.createElement('link', { key: 'icon32x32', rel: 'icon', type: 'image/png', href: favicon['32x32'], sizes: '32x32' }),
-    _react2.default.createElement('link', { key: 'icon16x16', rel: 'icon', type: 'image/png', href: favicon['16x16'], sizes: '16x16' }),
+    _react2.default.createElement('link', {
+      key: 'icon32x32',
+      rel: 'icon',
+      type: 'image/png',
+      href: favicon['32x32'],
+      sizes: '32x32'
+    }),
+    _react2.default.createElement('link', {
+      key: 'icon16x16',
+      rel: 'icon',
+      type: 'image/png',
+      href: favicon['16x16'],
+      sizes: '16x16'
+    }),
     _react2.default.createElement(
       'title',
       null,
@@ -2350,4 +2374,4 @@ var sections = exports.sections = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.3a5e7a7e.js.map
+//# sourceMappingURL=app.static.8d084fad.js.map
