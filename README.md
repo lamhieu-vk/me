@@ -1,5 +1,7 @@
 # me
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lamhieu-vk/me.svg)](https://greenkeeper.io/)
+
 this is a personal website source code by me, visit my home at [lamhieu.info](https://lamhieu.info)
 
 # based
